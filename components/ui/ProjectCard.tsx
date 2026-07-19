@@ -29,9 +29,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <div>
         <Link 
           href={`/whatwedo/${project.slug}`}
-          className="inline-flex items-center text-sm font-normal text-brand-primary border-b-2 border-transparent hover:border-brand-primary transition pb-0.5"
+          className="relative inline-flex items-center text-sm font-normal text-brand-primary pb-0.5 group/link"
         >
-          Learn more
+          <span>Learn more</span>
+          <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-brand-primary transition-all duration-300 group-hover/link:w-full" />
         </Link>
       </div>
     </div>
