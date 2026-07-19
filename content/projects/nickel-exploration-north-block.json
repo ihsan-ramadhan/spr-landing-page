@@ -1,0 +1,35 @@
+{
+  "slug": "nickel-exploration-north-block",
+  "title": "Nickel Exploration",
+  "subtitle": "PT S2 - North Block",
+  "summary": "Resource definition and drilling programs in the North Block with high-grade potential up to 3.12% nickel, covering 461.1 Ha concession.",
+  "heroImage": "/images/projects/exploration-north-block.webp",
+  "order": 2,
+  "featured": false,
+  "stats": [
+    { "label": "Concession Area", "value": "461.1", "unit": "ha" },
+    { "label": "Drill Holes", "value": "144", "unit": "holes" },
+    { "label": "Sample Length", "value": "2,880", "unit": "m" },
+    { "label": "Highest Grade", "value": "3.12", "unit": "% Ni" }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": [
+        "The North IUP showed great potential deposit with high grade up to 3.12% nickel sample from 30 test pits done previously in 2010.",
+        "Stargate has commenced with JORC-compliant drilling exploration programme in July 2021 to confirm the high grade deposit potential. The stage 1 programme consists of 400x200 drill-hole grid and up to 50x50 infill grid in prospective areas. GPR survey is also underway to identify bedrock layer and to delineate the deposit calculation.",
+        "Interim drilling result of 144 drill holes (about 2,880m of samples) will be reported starting in Dec 2021 and be completed in Apr 2022."
+      ]
+    },
+    {
+      "heading": "Tenements",
+      "body": [
+        "Stage: Production IUP",
+        "Status: Clear & Clean",
+        "Total area: 461.1 Ha",
+        "Expiry: 1-Feb-2031 (up-to 2051)",
+        "Extensible: @ 10-year each"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "2x33mva-rkef-project",
+  "title": "2x33MVA RKEF Project",
+  "subtitle": "PT SMA - Smelter",
+  "summary": "Construction of 2x33MVA RKEF ferronickel smelter producing 130,740 tons NPI per year, built by Sinosteel with PLN green power.",
+  "heroImage": "/images/projects/2x33mva-rkef-project.webp",
+  "order": 4,
+  "featured": true,
+  "stats": [
+    { "label": "Smelter Capacity", "value": "2x33", "unit": "MVA RKEF" },
+    { "label": "Annual NPI Output", "value": "130,740", "unit": "tons/year" },
+    { "label": "Resource Feedstock", "value": "24.7", "unit": "M WMT" },
+    { "label": "Nickel Recovery", "value": "93", "unit": "%" }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": [
+        "Stargate is planning to build a ferronickel smelter that produces Nickel Pig Iron (\"NPI\").",
+        "The location of the smelter will be in Molore Village, Langgikima District, North Konawe Regency, Southeast Sulawesi Province. The raw material from SMA smelter will be supplied by SPR, a sister company of SMA. SPR is a holder of mining permit in an approximately 1,674 hectares of area with nickel ore resource compatible with the smelter plant measured at 24.7 million wet metric tons (\"WMT\").",
+        "The smelter, in which to be constructed by Sinosteel, will be equipped with 2 lines of Rotary Kiln Electric Furnace (\"RKEF\") smelter, with a design basis of NPI nickel content recovery rate of 93% from converting nickel ore to NPI, NPI production capacity of 130,740 tons per year (using 1.65% Ni feedstock), and NPI nickel content of 10%.",
+        "Stargate smelter construction and pre operational activities is expected to finish by the end of 2023 and operational activities is expected to commence starting 1 January 2024.",
+        "For the initial operation and maintenance of the RKEF, Stargate has agreed to grant the EPC Contractor 2-Year O&M Contract to ensure smooth commissioning."
+      ]
+    },
+    {
+      "heading": "Technology & Partners",
+      "body": [
+        "Processing Technology: 2x33MVA RKEF",
+        "EPC Contractor: Sinosteel Equipment & Engineering Co. Ltd.",
+        "Power & Electricity: PLN Sulawesi National Grid",
+        "PLN 450MW onsite PLTGU",
+        "Operation & Maintenance: 2-Year O&M Contract by the EPC Contractor",
+        "",
+        "Instead of constructing another high carbon emission PLTU for the smelter, Stargate has decided to cooperate with PLN to achieve greener power source.",
+        "PLN Sulawesi has 500MW excess of electricity power, Stargate has agreed to purchase power from and co-invest with PLN to build transmission line to connect Stargate industrial park to the grid.",
+        "PLN also plans to construct its own 450MW PLTGU in the Stargate area. The completion is on schedule with the RKEF construction."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "mining-services",
+  "title": "Mining Services",
+  "subtitle": "PT RSL",
+  "summary": "IUJP licensed mining service company providing end-to-end nickel mining services in Konawe Utara, from overburden removal to ore shipping.",
+  "heroImage": "/images/projects/mining-services.webp",
+  "order": 3,
+  "featured": false,
+  "stats": [
+    { "label": "Established", "value": "IUJP Licensed" },
+    { "label": "Annual Target", "value": "2.4", "unit": "M Tons HG" },
+    { "label": "Total Material Mined", "value": "10-12", "unit": "M Tons/Year" },
+    { "label": "Operations Since", "value": "2006" }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": [
+        "PT RSL is an IUJP licensed mining service company focusing in nickel mine operation in Konawe Utara, Sulawesi Tenggara, Indonesia.",
+        "Our management team has a proven track record in constructing and accomplishing nickel ore mining with the highest standards of Good Mining Practice. Our nickel focused expertise and experience aim to bring each nickel mine operation for optimal efficiency, productivity and cost performance.",
+        "Our capability, performance excellence driven nickel mining services include:",
+        "Mining Engineering, Mining Design, Mining Plan, Mining Estimation, Mining Construction, Mining Overburden Removal, Mining Ore Extraction, Mining Loading and Hauling, Mining Ore Shipping, Mining Reconciliation, Mining Monitoring and Maintenance, Mining Rehabilitation."
+      ]
+    },
+    {
+      "heading": "Project Portfolio",
+      "body": [
+        "Manuran Nickel Mine (PT ASP) — 2006 to 2014",
+        "Full mining service with annual target capacity of 1.2 million tons of ore shipments, from overburden removal, selective mining, stockpiling, hauling, until transhipment to mother vessels.",
+        "",
+        "Stargate South Block (PT SPR) — 2017 to present",
+        "Full mining service with annual target capacity of 2.4 million tons of high grade ore shipments. The planned total material mined would be 10-12 million tons."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "konawe-utara-industrial-park",
+  "title": "Konawe Utara Industrial Park",
+  "subtitle": "PT SMA - Industrial Park",
+  "summary": "A strategic eco-industrial park in Konawe Utara designed by MottMac, featuring integrated smelters, deep-sea port, and renewable energy infrastructure.",
+  "heroImage": "/images/projects/industrial-park.webp",
+  "order": 5,
+  "featured": true,
+  "stats": [
+    { "label": "Master Planner", "value": "MottMac" },
+    { "label": "Planned Power", "value": "450", "unit": "MW PLTGU" },
+    { "label": "HPAL Capacity", "value": "30,000", "unit": "tpa" },
+    { "label": "Strategic Location", "value": "Matarape Bay" }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": [
+        "The most strategic and suitable land for industrial area in the surrounding nickel-rich region is located in Stargate's concession.",
+        "Stargate's advantage is not its nickel deposit. It is its location, worthy of its name, Stargate is the gate to Konawe Utara's largest nickel deposit.",
+        "Ore supply from surrounding deposit will have low transportation cost through on land roads. Located in the heart of Matarape Bay, Stargate's port has sufficient water depth and safe anchorage space to accomodate large ships.",
+        "And being the only one with suitable land for sizable industrial plants, Stargate has the competitive edge to be the leading nickel processing center in the region.",
+        "Stargate has appointed MottMac to design the Indonesia ASPIREstargate Industrial Park Masterplan."
+      ]
+    },
+    {
+      "heading": "Masterplan Infrastructure",
+      "body": [
+        "WBS5000 — INFRASTRUCTURE",
+        "",
+        "1. Jetty / Port — Molore Port and Lameruru Port, interconnected to service bulk cargo ships, container cargo ships, LNG ships, tugs and barges.",
+        "2. Water Infrastructure — including water treatment to produce clean water and supply water to the processing plants.",
+        "3. Industrial waste treatment and used water treatment, industrial park waste management facilities.",
+        "4. Office buildings for the management of the industrial park.",
+        "5. Fire fighting & other emergency station facilities.",
+        "6. Supporting facilities area — workshops, engineering services, small factories, etc.",
+        "7. Business centre and supporting facilities (located outside main gate).",
+        "8. Camp and Townsite — residential for managers, workers, hotel, shops.",
+        "9. Infrastructure facilities — roads (industrial zone spec), telecommunication (fibre optic & BTS), power distribution, potable water distribution, waste water & sewerage, drainage, gas distribution.",
+        "10. Power Plant — 450 MW LNG power plant location and substations.",
+        "",
+        "Main Plants:",
+        "- 4x33 MW Rotary Kiln Electric Furnace",
+        "- Ni-matte & NiSO₄ Atmospheric Leaching",
+        "- Hydromet High Pressured Acid Leaching (HPAL) — 30,000 tpa"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "nickel-mining-south-block",
+  "title": "Nickel Mining",
+  "subtitle": "PT SPR - South Block",
+  "summary": "Active mining operations in the South Block producing 2.4 million tons of High Grade ore per year, with JORC-compliant resources of 146 million tons.",
+  "heroImage": "/images/projects/mining-south-block.webp",
+  "order": 1,
+  "featured": true,
+  "stats": [
+    { "label": "Annual Production", "value": "2.4", "unit": "M Tons HG" },
+    { "label": "Concession Area", "value": "1,213", "unit": "ha" },
+    { "label": "Total Resources", "value": "146.1", "unit": "M Tons @1.19% Ni" },
+    { "label": "Stockpile Capacity", "value": "1.5", "unit": "M Tons" }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": [
+        "Stargate is located between the top two largest nickel smelters, Tsingshan Group and Virtue Dragon, giving Stargate competitive freight costs for shipping ore.",
+        "Stargate has established its reputation in nickel mining and has become the preferred supplier by each of its customers.",
+        "To satisfy and meet their demand, Stargate plans to double its current production and shipping capacity to 2.4 million tons of High Grade ore per year, and an additional 4 million tons of Medium and Low Grade ore per year.",
+        "The strategy is to optimize the NPV of the mine, and to produce the High Grade ore as much and as early as possible from the South IUP. The increase of capacity is also inline with Stargate's plan to build its own RKEF processing plants which would require 600k tons of feed-in per line."
+      ]
+    },
+    {
+      "heading": "Tenements",
+      "body": [
+        "Stage: Production IUP",
+        "Status: Clear & Clean",
+        "Total area: 1,213.2 Ha",
+        "Expiry: 22-Dec-2029 (up-to 2049)",
+        "Extensible: @ 10-year each",
+        "",
+        "Stargate has also obtained other primary and secondary permitting, such as, all necessary forestry IPPKH permits for both IUPs, jetty permits, environmental permits, etc. All Stargate's obligations to the government are in good standing.",
+        "",
+        "Stargate has fully secured all land areas, totalling 540 hectares, required for the mining operation, including 100% ownership of strategic areas: ports, main access road, future industrial plant areas, and the nickel deposits areas."
+      ]
+    },
+    {
+      "heading": "Infrastructure",
+      "body": [
+        "Stargate has all-weather logistics capabilities with a network of hauling roads, two jetties with combined loading capacity up to 20,000t/day, and a total storage capacity of 1.5 million tonnes. The distance from pits to the immediate stockpiles and jetties varies from 0.5 to 1.8km.",
+        "The mine site has fully equipped base camps with accommodation and dining facilities, a site office, sample preparation, analysis lab and nursery for rehabilitation and reforestation.",
+        "",
+        "Molore Jetty",
+        "Total area: 1.5 ha | Barge capacity: 4 barges slots | Tide level: 9 – 12 m | Barge size: 270 – 330 ft",
+        "",
+        "Lameruru Jetty",
+        "Total area: 1.6 ha (expandable +1.2 ha) | Barge capacity: 2 barges slots | Tide level: 10 – 12 m | Barge size: 270 – 330 ft",
+        "",
+        "Mining Stockpile — Storage capacity: 1.5 million tons",
+        "Mining hauling roads — Fully-owned, dedicated for Stargate use."
+      ]
+    },
+    {
+      "heading": "Resources & Reserves",
+      "body": [
+        "JORC Mineral Resources Report made by RungePincockMinarco released in May 2014, aiming for internal Stargate use only.",
+        "Total Resources: 146,100,000 tons of ore grading 1.19% Ni, 33.14% Fe and 0.09% Co.",
+        "",
+        "A Reserve Statement based on the JORC resource modelling was completed by Stargate to classify Limonite ore for hydromet technology and Saprolite ore for RKEF technology.",
+        "",
+        "Limonite",
+        "Total Reserves: 92,187,796 tons of ore grading 1.0% Ni, 37.4% Fe, 12.2% SiO₂, 3.5% MgO and 9.2% Al₂O₃.",
+        "",
+        "Saprolite",
+        "Total Reserves: 23,178,777 tons of ore grading 1.7% Ni, 26.5% Fe, 22.6% SiO₂, 8.2% MgO and 5.9% Al₂O₃."
+      ]
+    }
+  ]
+}
