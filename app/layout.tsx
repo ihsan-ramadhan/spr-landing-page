@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins, Manrope } from 'next/font/google';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
+import { getSiteConfig } from '../lib/content';
 import './globals.css';
 
 const poppins = Poppins({
@@ -26,12 +27,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const config = getSiteConfig();
+
   return (
     <html lang="en" className={`${poppins.variable} ${manrope.variable}`}>
       <body className="flex flex-col min-h-screen font-manrope text-foreground bg-background">
         <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <main className="grow">{children}</main>
+        <Footer
+          name={config.name}
+          address={config.address}
+          email={config.email}
+          social={config.social}
+          legalName={config.legalName}
+        />
       </body>
     </html>
   );

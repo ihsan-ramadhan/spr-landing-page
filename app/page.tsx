@@ -1,47 +1,66 @@
 import { getProjects } from '../lib/content';
 import ProjectCard from '../components/ui/ProjectCard';
+import Reveal from '../components/ui/Reveal';
+import ParallaxBackground from '../components/ui/ParallaxBackground';
+import HeroAnimation from '../components/home/HeroAnimation';
 
 export default function HomePage() {
-  const projects = getProjects().filter(p => p.featured);
+  const projects = getProjects().filter((p) => p.featured);
 
   return (
     <div className="flex flex-col">
-      <section className="relative min-h-[70vh] bg-brand-black flex items-end py-20 px-6 bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/images/backgrounds/hero.webp')" }}>
+      <ParallaxBackground
+        className="relative min-h-[70vh] bg-brand-black flex items-end py-20 px-6 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/images/backgrounds/hero.webp')",
+        }}
+      >
         <div className="max-w-[90%] mx-auto w-full">
-          <h1 className="text-white text-4xl md:text-6xl font-normal max-w-3xl leading-tight font-poppins">
-            Our pure and renewable journey together.
-          </h1>
+          <HeroAnimation text="Our pure and renewable journey together." />
         </div>
-      </section>
+      </ParallaxBackground>
 
-      {/* Intro paragraph & featured Projects */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-[90%] mx-auto">
-          <p className="text-xl md:text-2xl text-gray-700 max-w-4xl font-normal mb-16 leading-relaxed">
-            We are passionate in creating a better present and let’s start from within ourselves.
-          </p>
+          <Reveal direction="up" delay={0.1}>
+            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl font-normal mb-16 leading-relaxed">
+              We are passionate in creating a better present and let&rsquo;s start from within
+              ourselves.
+            </p>
+          </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {projects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+            {projects.map((project, idx) => (
+              <ProjectCard key={project.slug} project={project} index={idx} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Banner Section */}
-      <section className="relative py-32 px-6 bg-brand-black text-white text-center bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/images/backgrounds/cta.webp')" }}>
-        <div className="max-w-3xl mx-auto flex flex-col items-center">
-          <h2 className="text-3xl md:text-5xl font-normal leading-tight mb-8 font-poppins">
-            Achieving Renewable <span className="italic">“Green”</span> Nickel Battery Materials
-          </h2>
-          <a 
-            href="/whatwedo/renewable-nickel-battery-materials" 
-            className="inline-flex px-6 py-3 border border-white text-sm font-normal tracking-wider uppercase hover:bg-white hover:text-brand-black transition"
-          >
-            Our future
-          </a>
+      <ParallaxBackground
+        className="relative py-32 px-6 bg-brand-black text-white text-center bg-cover bg-center overflow-hidden"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/images/backgrounds/cta.webp')",
+        }}
+      >
+        <div className="max-w-3xl mx-auto flex flex-col items-center relative z-10">
+          <Reveal direction="up" delay={0.1}>
+            <h2 className="text-3xl md:text-5xl font-normal leading-tight mb-8 font-poppins">
+              Achieving Renewable <span className="italic">&ldquo;Green&rdquo;</span> Nickel Battery
+              Materials
+            </h2>
+          </Reveal>
+          <Reveal direction="up" delay={0.3}>
+            <a
+              href="/whatwedo/renewable-nickel-battery-materials"
+              className="inline-flex px-6 py-3 border border-white text-sm font-normal tracking-wider uppercase hover:bg-white hover:text-brand-black transition-all duration-300 hover:scale-105 active:scale-95"
+            >
+              Our future
+            </a>
+          </Reveal>
         </div>
-      </section>
+      </ParallaxBackground>
     </div>
   );
 }
