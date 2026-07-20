@@ -25,7 +25,7 @@ function runSelfCheck() {
   }
   console.log('All 6 Projects parsed and validated successfully.');
 
-  console.log('All checks passed successfully!');
+  console.log('\nAll checks passed successfully!');
 }
 
 runSelfCheck();

@@ -24,7 +24,17 @@ export default function Footer({ name, address, email, social, legalName }: Foot
 
     const ctx = gsap.context(() => {
       const columns = footer.querySelectorAll('.footer-col');
-      gsap.fromTo(
+      const bottom = footer.querySelector('.footer-bottom');
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: footer,
+          start: 'top 90%',
+          once: true,
+        },
+      });
+
+      tl.fromTo(
         columns,
         { opacity: 0, y: 30 },
         {
@@ -33,30 +43,18 @@ export default function Footer({ name, address, email, social, legalName }: Foot
           duration: 0.7,
           stagger: 0.15,
           ease: 'power3.out',
-          scrollTrigger: {
-            trigger: footer,
-            start: 'top 90%',
-            once: true,
-          },
         },
       );
 
-      const bottom = footer.querySelector('.footer-bottom');
       if (bottom) {
-        gsap.fromTo(
+        tl.fromTo(
           bottom,
           { opacity: 0, y: 10 },
           {
             opacity: 1,
             y: 0,
             duration: 0.5,
-            delay: 0.3,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: footer,
-              start: 'top 90%',
-              once: true,
-            },
+            ease: 'power3.out'
           },
         );
       }

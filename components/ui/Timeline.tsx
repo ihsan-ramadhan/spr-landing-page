@@ -179,7 +179,15 @@ export default function Timeline({ items }: TimelineProps) {
       const headerItems = header.querySelectorAll('.timeline-header-item');
       if (!headerItems.length) return;
 
-      gsap.fromTo(
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: header,
+          start: 'top 85%',
+          once: true,
+        },
+      });
+
+      tl.fromTo(
         headerItems,
         { opacity: 0, y: 20 },
         {
@@ -188,19 +196,11 @@ export default function Timeline({ items }: TimelineProps) {
           duration: 0.6,
           stagger: 0.15,
           ease: 'power3.out',
-          scrollTrigger: {
-            trigger: header,
-            start: 'top 85%',
-            once: true,
-          },
         },
       );
     }, header);
 
-    const refreshId = requestAnimationFrame(() => ScrollTrigger.refresh());
-
     return () => {
-      cancelAnimationFrame(refreshId);
       ctx.revert();
     };
   }, []);
