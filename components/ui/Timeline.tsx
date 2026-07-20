@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -43,15 +43,23 @@ function TimelineItemRow({
   const dotRef = useRef<HTMLDivElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
 
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    setIsDesktop(mq.matches);
+
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
   useEffect(() => {
     const row = rowRef.current;
     const dot = dotRef.current;
     const line = lineRef.current;
-    if (!row || !dot) return;
-
-    const isDesktop = window.innerWidth >= 768;
     const card = isDesktop ? desktopCardRef.current : mobileCardRef.current;
-    if (!card) return;
+    if (!row || !dot || !card) return;
 
     const ctx = gsap.context(() => {
       gsap.set(dot, { scale: 0, opacity: 0 });
@@ -63,32 +71,22 @@ function TimelineItemRow({
           trigger: row,
           start: 'top 80%',
           once: true,
-          markers: false,
         },
       });
 
-      tl.to(
-        dot,
-        { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(2)' },
-      );
+      tl.to(dot, { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(2)' });
 
       if (!isLast && line) {
-        tl.to(
-          line,
-          { scaleY: 1, duration: 0.5, ease: 'power3.out' },
-          '-=0.3',
-        );
+        tl.to(line, { scaleY: 1, duration: 0.5, ease: 'power3.out' }, '-=0.3');
       }
 
-      tl.to(
-        card,
-        { opacity: 1, x: 0, duration: 0.7, ease: 'power3.out' },
-        '-=0.4',
-      );
+      tl.to(card, { opacity: 1, x: 0, duration: 0.7, ease: 'power3.out' }, '-=0.4');
     }, row);
 
-    return () => ctx.revert();
-  }, [index, isLast]);
+    return () => {
+      ctx.revert();
+    };
+  }, [index, isLast, isDesktop]);
 
   const isLeft = index % 2 === 0;
   const phase = PHASE_STYLES[item.phase] || PHASE_STYLES.history;
@@ -103,7 +101,7 @@ function TimelineItemRow({
         {isLeft && (
           <div
             ref={desktopCardRef}
-            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group opacity-0"
+            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group"
           >
             <div className="p-5 md:p-6">
               <div className="flex items-center gap-3 mb-2">
@@ -121,7 +119,6 @@ function TimelineItemRow({
         <div
           ref={dotRef}
           className={`w-4 h-4 rounded-full border-2 ${phase.dot}`}
-          style={{ opacity: 0, scale: 0 }}
         />
         {!isLast && (
           <div
@@ -136,7 +133,7 @@ function TimelineItemRow({
         {!isLeft && (
           <div
             ref={desktopCardRef}
-            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group opacity-0"
+            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group"
           >
             <div className="p-5 md:p-6">
               <div className="flex items-center gap-3 mb-2">
@@ -154,7 +151,7 @@ function TimelineItemRow({
         <div className="ml-4 flex-1">
           <div
             ref={mobileCardRef}
-            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group opacity-0"
+            className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group"
           >
             <div className="p-5 md:p-6">
               <div className="flex items-center gap-3 mb-2">
@@ -179,9 +176,11 @@ export default function Timeline({ items }: TimelineProps) {
     if (!header) return;
 
     const ctx = gsap.context(() => {
-      if (!header.children.length) return;
+      const headerItems = header.querySelectorAll('.timeline-header-item');
+      if (!headerItems.length) return;
+
       gsap.fromTo(
-        header.children,
+        headerItems,
         { opacity: 0, y: 20 },
         {
           opacity: 1,
@@ -193,13 +192,17 @@ export default function Timeline({ items }: TimelineProps) {
             trigger: header,
             start: 'top 85%',
             once: true,
-            markers: false,
           },
         },
       );
     }, header);
 
-    return () => ctx.revert();
+    const refreshId = requestAnimationFrame(() => ScrollTrigger.refresh());
+
+    return () => {
+      cancelAnimationFrame(refreshId);
+      ctx.revert();
+    };
   }, []);
 
   if (!items || items.length === 0) return null;
@@ -216,11 +219,11 @@ export default function Timeline({ items }: TimelineProps) {
       />
 
       <div ref={headerRef} className="text-center mb-14 md:mb-20">
-        <div className="inline-flex items-center gap-2 text-xs font-normal uppercase tracking-[0.2em] text-brand-primary bg-brand-primary/5 px-4 py-1.5 rounded-full mb-3">
+        <div className="inline-flex items-center gap-2 text-xs font-normal uppercase tracking-[0.2em] text-brand-primary bg-brand-primary/5 px-4 py-1.5 rounded-full mb-3 timeline-header-item">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-primary" />
           Our Story
         </div>
-        <h3 className="text-3xl md:text-4xl font-normal font-poppins text-gray-900 tracking-tight">
+        <h3 className="text-3xl md:text-4xl font-normal font-poppins text-gray-900 tracking-tight timeline-header-item">
           Milestones
         </h3>
       </div>

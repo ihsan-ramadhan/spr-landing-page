@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -23,6 +23,10 @@ export default function Navbar() {
   const headerRef = useRef<HTMLElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = useCallback(() => setMenuOpen(false), []);
 
   useEffect(() => {
     const header = headerRef.current;
@@ -46,6 +50,43 @@ export default function Navbar() {
 
     return () => ctx.revert();
   }, []);
+
+  useEffect(() => {
+    const menu = mobileMenuRef.current;
+    if (!menu) return;
+
+    if (menuOpen) {
+      gsap.set(menu, { display: 'flex' });
+      gsap.fromTo(
+        menu,
+        { opacity: 0, y: -10 },
+        { opacity: 1, y: 0, duration: 0.25, ease: 'power2.out' },
+      );
+      const links = menu.querySelectorAll('a');
+      gsap.fromTo(
+        links,
+        { opacity: 0, x: -20 },
+        { opacity: 1, x: 0, duration: 0.3, stagger: 0.05, ease: 'power2.out', delay: 0.1 },
+      );
+    } else {
+      gsap.to(menu, {
+        opacity: 0,
+        y: -10,
+        duration: 0.2,
+        ease: 'power2.in',
+        onComplete: () => gsap.set(menu, { display: 'none' }),
+      });
+    }
+
+    return () => {
+      gsap.killTweensOf(menu);
+      gsap.killTweensOf(menu.querySelectorAll('a'));
+    };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    closeMenu();
+  }, [pathname, closeMenu]);
 
   return (
     <header
@@ -92,6 +133,44 @@ export default function Navbar() {
             );
           })}
         </nav>
+        <button
+          type="button"
+          onClick={() => setMenuOpen((prev) => !prev)}
+          className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 z-50"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+        >
+          <span className="block w-6 h-0.5 bg-gray-900 transition-transform duration-300" />
+          <span className="block w-6 h-0.5 bg-gray-900 transition-transform duration-300" />
+          <span className="block w-6 h-0.5 bg-gray-900 transition-transform duration-300" />
+        </button>
+      </div>
+
+      <div
+        ref={mobileMenuRef}
+        className="md:hidden absolute left-0 right-0 top-full bg-white border-b border-gray-100 shadow-lg z-40 flex-col px-6 py-4 space-y-1 overflow-y-auto"
+        style={{ display: 'none' }}
+      >
+        {NAV_ITEMS.map((item) => {
+          const isActive =
+            pathname === item.href ||
+            (item.href !== '/' && pathname.startsWith(item.href));
+
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={closeMenu}
+              className={`block py-2.5 px-4 text-sm font-normal rounded-lg transition-colors duration-200 ${
+                isActive
+                  ? 'text-brand-primary bg-brand-primary/5'
+                  : 'text-gray-700 hover:text-brand-primary hover:bg-gray-50'
+              }`}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
       </div>
     </header>
   );
