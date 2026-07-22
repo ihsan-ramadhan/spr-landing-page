@@ -5,9 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
@@ -30,25 +27,34 @@ export default function Navbar() {
 
   useEffect(() => {
     const header = headerRef.current;
-    const logo = logoRef.current;
-    const nav = navRef.current;
-    if (!header || !logo || !nav) return;
+    if (!header) return;
 
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        start: 'top -60',
-        end: 'top -120',
-        onUpdate: (self) => {
-          if (self.progress > 0) {
-            header.classList.add('shadow-md', 'backdrop-blur-md', 'bg-white/90');
-          } else {
-            header.classList.remove('shadow-md', 'backdrop-blur-md', 'bg-white/90');
-          }
-        },
-      });
-    }, header);
+    let lastScrollY = window.scrollY;
 
-    return () => ctx.revert();
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollingDown = currentScrollY > lastScrollY;
+
+      if (currentScrollY <= 50 || !scrollingDown) {
+        header.classList.remove('-translate-y-full');
+      } else if (currentScrollY > 50 && scrollingDown) {
+        header.classList.add('-translate-y-full');
+        setMenuOpen(false);
+      }
+
+      if (currentScrollY < 60) {
+        header.classList.remove('shadow-md', 'backdrop-blur-md', 'bg-white/90');
+      } else {
+        header.classList.add('shadow-md', 'backdrop-blur-md', 'bg-white/90');
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
@@ -91,7 +97,7 @@ export default function Navbar() {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 z-50 bg-white border-b border-gray-100/80 transition-all duration-300"
+      className="sticky top-0 z-50 bg-white border-b border-gray-100/80 transition-transform duration-300 ease-in-out will-change-transform"
     >
       <div className="max-w-[90%] mx-auto px-6 h-28 flex justify-between items-center transition-all duration-300">
         <Link href="/" className="flex items-center">
@@ -148,7 +154,7 @@ export default function Navbar() {
 
       <div
         ref={mobileMenuRef}
-        className="lg:hidden absolute left-0 right-0 top-full bg-white border-b border-gray-100 shadow-lg z-40 flex-col px-6 py-4 space-y-1 overflow-y-auto"
+        className="lg:hidden absolute left-0 right-0 top-full bg-white border-b border-gray-100 shadow-lg z-40 flex flex-col px-6 py-4 space-y-1 overflow-y-auto"
         style={{ display: 'none' }}
       >
         {NAV_ITEMS.map((item) => {
