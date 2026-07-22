@@ -105,7 +105,7 @@ export default function Navbar() {
             />
           </div>
         </Link>
-        <nav ref={navRef} className="hidden md:flex items-center space-x-2">
+        <nav ref={navRef} className="hidden lg:flex items-center space-x-2">
           {NAV_ITEMS.map((item) => {
             const isActive =
               pathname === item.href ||
@@ -115,7 +115,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative px-5 py-2.5 text-sm font-normal transition-colors duration-300 group ${
+                className={`relative px-4 lg:px-5 py-2.5 text-sm font-normal transition-colors duration-300 group ${
                   isActive
                     ? 'text-brand-primary'
                     : 'text-gray-600 hover:text-brand-primary'
@@ -136,7 +136,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 z-50"
+          className="lg:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 z-50"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
         >
@@ -148,7 +148,7 @@ export default function Navbar() {
 
       <div
         ref={mobileMenuRef}
-        className="md:hidden absolute left-0 right-0 top-full bg-white border-b border-gray-100 shadow-lg z-40 flex-col px-6 py-4 space-y-1 overflow-y-auto"
+        className="lg:hidden absolute left-0 right-0 top-full bg-white border-b border-gray-100 shadow-lg z-40 flex-col px-6 py-4 space-y-1 overflow-y-auto"
         style={{ display: 'none' }}
       >
         {NAV_ITEMS.map((item) => {
