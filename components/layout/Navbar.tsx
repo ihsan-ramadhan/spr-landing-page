@@ -43,9 +43,9 @@ export default function Navbar() {
       }
 
       if (currentScrollY < 60) {
-        header.classList.remove('shadow-md', 'backdrop-blur-md', 'bg-white/90');
+        header.classList.remove('shadow-md');
       } else {
-        header.classList.add('shadow-md', 'backdrop-blur-md', 'bg-white/90');
+        header.classList.add('shadow-md');
       }
 
       lastScrollY = currentScrollY;
@@ -146,9 +146,9 @@ export default function Navbar() {
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
         >
-          <span className="block w-6 h-0.5 bg-gray-900 transition-transform duration-300" />
-          <span className="block w-6 h-0.5 bg-gray-900 transition-transform duration-300" />
-          <span className="block w-6 h-0.5 bg-gray-900 transition-transform duration-300" />
+          <span className={`block w-6 h-0.5 bg-gray-900 transition-transform duration-300 origin-center ${menuOpen ? 'translate-y-2 rotate-45' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-gray-900 transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`} />
+          <span className={`block w-6 h-0.5 bg-gray-900 transition-transform duration-300 origin-center ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`} />
         </button>
       </div>
 
