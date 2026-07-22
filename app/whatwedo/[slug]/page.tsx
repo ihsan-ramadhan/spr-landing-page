@@ -4,6 +4,7 @@ import { getProjects, getProjectBySlug } from '../../../lib/content';
 import StatCard from '../../../components/ui/StatCard';
 import Reveal from '../../../components/ui/Reveal';
 import ParallaxBackground from '../../../components/ui/ParallaxBackground';
+import ProjectMap from '../../../components/ui/ProjectMap';
 import { use } from 'react';
 
 interface ProjectPageProps {
@@ -34,8 +35,9 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
       <ParallaxBackground
         className="relative min-h-[40vh] bg-brand-black flex items-end py-16 px-6 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7))",
+          backgroundImage: project.heroImage
+            ? `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('${project.heroImage}')`
+            : "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7))",
         }}
       >
         <div className="max-w-[90%] mx-auto w-full">
@@ -62,6 +64,27 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
                 <StatCard key={i} label={stat.label} value={stat.value} unit={stat.unit} index={i} />
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {project.mapCoordinates && (
+        <section className="bg-white border-b border-gray-100">
+          <div className="max-w-[90%] mx-auto px-6 py-12">
+            <Reveal direction="up" delay={0.1}>
+              <h2 className="text-xl md:text-2xl font-normal mb-2 font-poppins text-gray-900">
+                Site Location
+              </h2>
+              <p className="text-sm text-gray-500 mb-6">{project.mapCoordinates.label}</p>
+            </Reveal>
+            <Reveal direction="up" delay={0.2}>
+              <ProjectMap
+                lat={project.mapCoordinates.lat}
+                lng={project.mapCoordinates.lng}
+                zoom={project.mapCoordinates.zoom}
+                label={project.mapCoordinates.label}
+              />
+            </Reveal>
           </div>
         </section>
       )}

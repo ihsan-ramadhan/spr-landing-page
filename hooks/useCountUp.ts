@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -32,7 +32,7 @@ export function useCountUp(options: CountUpOptions) {
   } = options;
 
   const ref = useRef<HTMLSpanElement>(null);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const startedRef = useRef(false);
 
   const formatNumber = useCallback(
     (num: number) => {
@@ -47,39 +47,43 @@ export function useCountUp(options: CountUpOptions) {
 
   useEffect(() => {
     const el = ref.current;
-    if (!el || disabled || hasAnimated) return;
+    if (!el || disabled) return;
 
-    const ctx = gsap.context(() => {
-      el.textContent = formatNumber(0);
-      gsap.set(el, { opacity: 1 });
+    el.textContent = formatNumber(value);
+    if (startedRef.current) return;
+    startedRef.current = true;
 
-      const obj = { val: 0 };
+    el.textContent = formatNumber(0);
+    gsap.set(el, { opacity: 1 });
 
-      ScrollTrigger.create({
-        trigger: el,
-        start,
-        once: true,
-        onEnter: () => {
-          gsap.to(obj, {
-            val: value,
-            duration,
-            delay,
-            ease: 'power3.out',
-            onUpdate: () => {
-              el.textContent = formatNumber(obj.val);
-            },
-            onComplete: () => {
-              el.textContent = formatNumber(value);
-              setHasAnimated(true);
-            },
-          });
-        },
-        markers: false,
-      });
-    }, el);
+    const obj = { val: 0 };
 
-    return () => ctx.revert();
-  }, [value, duration, delay, start, disabled, hasAnimated, formatNumber]);
+    const st = ScrollTrigger.create({
+      trigger: el,
+      start,
+      once: true,
+      onEnter: () => {
+        gsap.to(obj, {
+          val: value,
+          duration,
+          delay,
+          ease: 'power3.out',
+          onUpdate: () => {
+            el.textContent = formatNumber(obj.val);
+          },
+          onComplete: () => {
+            el.textContent = formatNumber(value);
+          },
+        });
+      },
+      markers: false,
+    });
+
+    return () => {
+      st.kill();
+      el.textContent = formatNumber(value);
+    };
+  }, [value, duration, delay, start, disabled, formatNumber]);
 
   return ref;
 }

@@ -3,12 +3,18 @@
   "title": "Nickel Mining",
   "subtitle": "PT SPR - South Block",
   "summary": "Active mining operations in the South Block producing 2.4 million tons of High Grade ore per year, with JORC-compliant resources of 146 million tons.",
-  "heroImage": "/images/projects/battery-materials.webp",
+  "heroImage": "/images/projects/mining-south-block.webp",
+  "mapCoordinates": {
+    "lat": -3.31366,
+    "lng": 122.285943,
+    "zoom": 17,
+    "label": "South Block Mining Site"
+  },
   "order": 1,
   "featured": true,
   "stats": [
     { "label": "Annual Production", "value": "2.4", "unit": "M Tons HG" },
-    { "label": "Concession Area", "value": "1,213", "unit": "ha" },
+    { "label": "Concession Area", "value": "1,213.2", "unit": "ha" },
     { "label": "Total Resources", "value": "146.1", "unit": "M Tons @1.19% Ni" },
     { "label": "Stockpile Capacity", "value": "1.5", "unit": "M Tons" }
   ],
@@ -23,37 +29,32 @@
       ]
     },
     {
-      "heading": "Tenements",
+      "heading": "Mining Tenements",
       "body": [
         "Stage: Production IUP",
         "Status: Clear & Clean",
         "Total area: 1,213.2 Ha",
         "Expiry: 22-Dec-2029 (up-to 2049)",
         "Extensible: @ 10-year each",
-        "",
         "Stargate has also obtained other primary and secondary permitting, such as, all necessary forestry IPPKH permits for both IUPs, jetty permits, environmental permits, etc. All Stargate's obligations to the government are in good standing.",
-        "",
         "Stargate has fully secured all land areas, totalling 540 hectares, required for the mining operation, including 100% ownership of strategic areas: ports, main access road, future industrial plant areas, and the nickel deposits areas."
       ]
     },
     {
-      "heading": "Infrastructure",
+      "heading": "Mining Infrastructures",
       "body": [
         "Stargate has all-weather logistics capabilities with a network of hauling roads, two jetties with combined loading capacity up to 20,000t/day, and a total storage capacity of 1.5 million tonnes. The distance from pits to the immediate stockpiles and jetties varies from 0.5 to 1.8km.",
         "The mine site has fully equipped base camps with accommodation and dining facilities, a site office, sample preparation, analysis lab and nursery for rehabilitation and reforestation.",
-        "",
         "Molore Jetty",
         "Total area: 1.5 ha | Barge capacity: 4 barges slots | Tide level: 9 – 12 m | Barge size: 270 – 330 ft",
-        "",
         "Lameruru Jetty",
         "Total area: 1.6 ha (expandable +1.2 ha) | Barge capacity: 2 barges slots | Tide level: 10 – 12 m | Barge size: 270 – 330 ft",
-        "",
         "Mining Stockpile — Storage capacity: 1.5 million tons",
         "Mining hauling roads — Fully-owned, dedicated for Stargate use."
       ]
     },
     {
-      "heading": "Resources & Reserves",
+      "heading": "Resources and Reserves",
       "body": [
         "JORC Mineral Resources Report made by RungePincockMinarco released in May 2014, aiming for internal Stargate use only.",
         "Total Resources: 146,100,000 tons of ore grading 1.19% Ni, 33.14% Fe and 0.09% Co.",
