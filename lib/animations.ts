@@ -6,7 +6,7 @@ export const ANIMATION_DEFAULTS = {
   revealDuration: 0.8,
   ease: 'power3.out',
   slideDistance: 40,
-  scrollStart: 'top 85%',
+  scrollStart: 'top 95%',
 } as const;
 
 export type RevealDirection = 'up' | 'down' | 'left' | 'right';
