@@ -10,8 +10,17 @@ interface StatCardProps {
 }
 
 export default function StatCard({ label, value, unit, index = 0 }: StatCardProps) {
-  const numericValue = parseFloat(value.replace(/[^0-9.]/g, ''));
-  const isNumeric = !isNaN(numericValue);
+  const cleanValue = value.replace(/,/g, '');
+  const isNumeric = /^\d+(\.\d+)?$/.test(cleanValue);
+  
+  const numericValue = isNumeric ? parseFloat(cleanValue) : 0;
+  
+  const decMatch = cleanValue.match(/\.(\d+)/);
+  const decimals = decMatch ? decMatch[1].length : 0;
+  
+  const hasComma = value.includes(',');
+  const separator = hasComma ? ',' : '';
+
   const delay = 0.15 + index * 0.08;
 
   const countUpRef = useCountUp({
@@ -19,6 +28,8 @@ export default function StatCard({ label, value, unit, index = 0 }: StatCardProp
     duration: 2,
     delay,
     start: 'top 85%',
+    decimals,
+    separator,
     disabled: !isNumeric,
   });
 

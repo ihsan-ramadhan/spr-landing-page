@@ -1,11 +1,15 @@
 {
   "slug": "konawe-utara-industrial-park",
-  "title": "Konawe Utara Industrial Park",
-  "subtitle": "PT SMA - Industrial Park",
+  "title": "Konawe Utara ASPIRE Stargate Industrial Park",
+  "subtitle": "PT Stargate Mineral Asia",
   "summary": "A strategic eco-industrial park in Konawe Utara designed by MottMac, featuring integrated smelters, deep-sea port, and renewable energy infrastructure.",
   "heroImage": "/images/projects/industrial-park.webp",
   "order": 5,
   "featured": true,
+  "images": [
+    "/images/projects/industrial-park-1.webp",
+    "/images/projects/industrial-park-2.webp"
+  ],
   "stats": [
     { "label": "Master Planner", "value": "MottMac" },
     { "label": "Planned Power", "value": "450", "unit": "MW PLTGU" },
@@ -18,31 +22,27 @@
       "body": [
         "The most strategic and suitable land for industrial area in the surrounding nickel-rich region is located in Stargate's concession.",
         "Stargate's advantage is not its nickel deposit. It is its location, worthy of its name, Stargate is the gate to Konawe Utara's largest nickel deposit.",
-        "Ore supply from surrounding deposit will have low transportation cost through on land roads. Located in the heart of Matarape Bay, Stargate's port has sufficient water depth and safe anchorage space to accomodate large ships.",
-        "And being the only one with suitable land for sizable industrial plants, Stargate has the competitive edge to be the leading nickel processing center in the region.",
-        "Stargate has appointed MottMac to design the Indonesia ASPIREstargate Industrial Park Masterplan."
+        "Ore supply from surrounding deposit will have low transportation cost through on land roads.",
+        "Located in the heart of Matarape Bay, Stargate's port has sufficient water depth and safe anchorage space to accomodate large ships.",
+        "And being the only one with suitable land for sizable industrial plants, Stargate has the competitive edge to be the leading nickel processing center in the region."
       ]
     },
     {
-      "heading": "Masterplan Infrastructure",
+      "heading": "Master Plan Design",
       "body": [
-        "WBS5000 — INFRASTRUCTURE",
-        "",
-        "1. Jetty / Port — Molore Port and Lameruru Port, interconnected to service bulk cargo ships, container cargo ships, LNG ships, tugs and barges.",
-        "2. Water Infrastructure — including water treatment to produce clean water and supply water to the processing plants.",
-        "3. Industrial waste treatment and used water treatment, industrial park waste management facilities.",
-        "4. Office buildings for the management of the industrial park.",
-        "5. Fire fighting & other emergency station facilities.",
-        "6. Supporting facilities area — workshops, engineering services, small factories, etc.",
-        "7. Business centre and supporting facilities (located outside main gate).",
-        "8. Camp and Townsite — residential for managers, workers, hotel, shops.",
-        "9. Infrastructure facilities — roads (industrial zone spec), telecommunication (fibre optic & BTS), power distribution, potable water distribution, waste water & sewerage, drainage, gas distribution.",
-        "10. Power Plant — 450 MW LNG power plant location and substations.",
-        "",
-        "Main Plants:",
-        "- 4x33 MW Rotary Kiln Electric Furnace",
-        "- Ni-matte & NiSO₄ Atmospheric Leaching",
-        "- Hydromet High Pressured Acid Leaching (HPAL) — 30,000 tpa"
+        "Stargate has appointed MottMac to design the Indonesia ASPIREstargate Industrial Park Masterplan, which will include:",
+        "WBS5000 – INFRASTRUCTURE",
+        "1. Jetty / Port (5200)\na. Molore Port and Lameruru Port\nb. Interconnected or complementary to each other\nc. To service:\ni. Bulk cargo ships;\nii. Container cargo ships;\niii. LNG ships;\niv. Tugs and barges;\nd. Other jetty or port facilities.",
+        "2. Water Infrastructure (5500):\nincluding water treatment to produce clean water and supply water to the processing plants ( including with other utilities services facilities.",
+        "3. Industrial waste treatment and used water treatment (5600), industrial park waste management facilities.",
+        "5. Office buildings (5120) for the management of the industrial park.",
+        "6. Fire fighting & other emergency station (5130) facilities.",
+        "7. Supporting facilities (5140) area, i.e. workshops, engineering services, small factories, etc.",
+        "8. Business centre (5120) and supporting facilities (to be located outside main gate of industrial park).",
+        "9. Camp and Townsite (6000)\na. residential lodging for managers\nb. residential for workers\nc. hotel\nd. shops, shopping, etc.",
+        "10. Infrastructure facilities:\na. (5100) roads (specification for industrial zone)\nb. (5150) telecommunication (incl. fibre optic network & BTS)\nc. (5320) power distribution network\nd. (5540) potable water distribution network\ne. (5600) waste water & sewerage network\nf. (5100) drainage\ng. gas distribution network (to be confirmed)",
+        "11. Power Plant (7000) location (450 MW LNG power plant) and substations, and other power station related facilities.",
+        "12. Main plants:\na. 4x33 MW Rotary Kiln Electric Furnace\nb. Ni-matte & NiSO4 Atmospheric Leaching\nc. Hydromet High Pressured Acid Leaching (HPAL) - 30 ,000 tpa"
       ]
     }
   ]

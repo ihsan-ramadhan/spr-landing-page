@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getProjects, getProjectBySlug } from '../../../lib/content';
 import StatCard from '../../../components/ui/StatCard';
 import Reveal from '../../../components/ui/Reveal';
@@ -99,7 +100,7 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed max-w-4xl">
                   {section.body.map((paragraph, pIdx) => (
-                    <p key={pIdx}>{paragraph}</p>
+                    <p key={pIdx} className="whitespace-pre-line">{paragraph}</p>
                   ))}
                 </div>
               </div>
@@ -107,6 +108,25 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
           ))}
         </div>
       </section>
+
+      {project.images && project.images.length > 0 && (
+        <section className="max-w-[90%] mx-auto px-6 pb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {project.images.map((imgSrc, idx) => (
+              <Reveal key={idx} direction="up" delay={idx * 0.15}>
+                <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+                  <Image
+                    src={imgSrc}
+                    alt={`${project.title} Gallery ${idx + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="border-t border-gray-100 bg-gray-50/50">
         <div className="max-w-[90%] mx-auto px-6 py-12 flex justify-between items-center text-sm font-normal">

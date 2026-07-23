@@ -1,7 +1,7 @@
 {
   "slug": "2x33mva-rkef-project",
   "title": "2x33MVA RKEF Project",
-  "subtitle": "PT SMA - Smelter",
+  "subtitle": "PT Stargate Mineral Asia",
   "summary": "Construction of 2x33MVA RKEF ferronickel smelter producing 130,740 tons NPI per year, built by Sinosteel with PLN green power.",
   "heroImage": "/images/projects/2x33mva-rkef-project.webp",
   "order": 4,
@@ -24,14 +24,18 @@
       ]
     },
     {
-      "heading": "Technology & Partners",
+      "heading": "Phase I",
       "body": [
         "Processing Technology: 2x33MVA RKEF",
         "EPC Contractor: Sinosteel Equipment & Engineering Co. Ltd.",
         "Power & Electricity: PLN Sulawesi National Grid",
         "PLN 450MW onsite PLTGU",
-        "Operation & Maintenance: 2-Year O&M Contract by the EPC Contractor",
-        "",
+        "Operation & Maintenance: 2-Year O&M Contract by the EPC Contractor"
+      ]
+    },
+    {
+      "heading": "Greener Power",
+      "body": [
         "Instead of constructing another high carbon emission PLTU for the smelter, Stargate has decided to cooperate with PLN to achieve greener power source.",
         "PLN Sulawesi has 500MW excess of electricity power, Stargate has agreed to purchase power from and co-invest with PLN to build transmission line to connect Stargate industrial park to the grid.",
         "PLN also plans to construct its own 450MW PLTGU in the Stargate area. The completion is on schedule with the RKEF construction."

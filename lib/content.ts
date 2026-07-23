@@ -22,6 +22,7 @@ export interface Project {
   stats?: { label: string; value: string; unit?: string }[];
   sections: { heading: string; body: string[] }[];
   mapCoordinates?: { lat: number; lng: number; zoom: number; label: string };
+  images?: string[];
 }
 
 export interface AboutContent {
