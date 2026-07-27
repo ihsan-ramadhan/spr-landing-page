@@ -128,6 +128,7 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
                     alt={`${project.title} Gallery ${idx + 1}`}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               </Reveal>

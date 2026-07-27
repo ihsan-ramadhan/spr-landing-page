@@ -34,6 +34,7 @@ export default function GovernancePage() {
                 fill
                 className="object-contain"
                 priority
+                sizes="(max-width: 768px) 100vw, 896px"
               />
             </div>
           </div>
