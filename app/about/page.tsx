@@ -12,7 +12,7 @@ export default function AboutPage() {
         className="relative min-h-[50vh] bg-brand-black flex items-end py-20 px-6 bg-cover bg-center"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/images/backgrounds/about-purpose.webp')",
+            "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/45247612-f260-475a-82d1-cfd99900dd30/IMG_2479l.jpg')",
         }}
       >
         <div className="max-w-[90%] mx-auto w-full">

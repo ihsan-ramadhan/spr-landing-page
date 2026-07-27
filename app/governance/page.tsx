@@ -27,9 +27,9 @@ export default function GovernancePage() {
             <h2 className="text-xl md:text-2xl font-normal font-poppins text-gray-900 text-center mb-8">
               Corporate Governance Structure
             </h2>
-            <div className="relative w-full aspect-[2188/1360]">
+            <div className="relative w-full aspect-2188/1360">
               <Image
-                src="/images/governance-structure.webp"
+                src="https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/19b2dbd5-de16-4edb-863a-49566c386d68/ASPIRE-governance-structure.png"
                 alt="Corporate Governance Structure"
                 fill
                 className="object-contain"

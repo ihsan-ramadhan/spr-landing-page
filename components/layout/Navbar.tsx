@@ -103,7 +103,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <div ref={logoRef} className="relative h-20 w-56 transition-all duration-300">
             <Image
-              src="/images/logo.webp"
+              src="https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/58364340-731c-42e0-a3fb-ed0ca425b6e4/Logo+Member+of+Astra.png"
               alt="ASPIRE"
               fill
               className="object-contain object-left"

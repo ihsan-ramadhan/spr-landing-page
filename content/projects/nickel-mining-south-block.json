@@ -3,7 +3,10 @@
   "title": "Nickel Mining",
   "subtitle": "PT Stargate Pasific Resources - South Block Deposit",
   "summary": "Active mining operations in the South Block producing 2.4 million tons of High Grade ore per year, with JORC-compliant resources of 146 million tons.",
-  "heroImage": "/images/projects/mining-south-block.webp",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641105665845-QEQXR9D8RL2BC9KW6M5D/9D67F4EA-0DC5-4905-A3C9-EC018E3F2A5A.jpg",
+  "images": [
+    "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/fceaaed2-df61-4948-9ede-0aa0fbe2759c/BE5477E9-A603-4616-B032-8D6D9C1A029C.jpg"
+  ],
   "mapCoordinates": {
     "lat": -3.312075,
     "lng": 122.286066,

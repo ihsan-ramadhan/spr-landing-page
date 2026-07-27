@@ -3,12 +3,12 @@
   "title": "Konawe Utara ASPIRE Stargate Industrial Park",
   "subtitle": "PT Stargate Mineral Asia",
   "summary": "A strategic eco-industrial park in Konawe Utara designed by MottMac, featuring integrated smelters, deep-sea port, and renewable energy infrastructure.",
-  "heroImage": "/images/projects/industrial-park.webp",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641177694519-7G24WY4ZX99ZQYQBRAYW/5FD356A1-5BDA-40DE-B2F2-D22F1B459990.JPG",
   "order": 5,
   "featured": true,
   "images": [
-    "/images/projects/industrial-park-1.webp",
-    "/images/projects/industrial-park-2.webp"
+    "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641149442232-U7XNNSNG24VWGTC3TGIX/E918B669-F8A2-4323-82CC-B7A8869B0886+2.jpg",
+    "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/4de9f464-ad93-47f0-95f4-24fdbec2e99d/Screenshot+2022-01-06+at+9.00.01+AM.png"
   ],
   "stats": [
     { "label": "Master Planner", "value": "MottMac" },

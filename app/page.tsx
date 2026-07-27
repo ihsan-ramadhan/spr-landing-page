@@ -13,7 +13,7 @@ export default function HomePage() {
         className="relative min-h-[70vh] bg-brand-black flex items-end py-20 px-6 bg-cover bg-center"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/images/backgrounds/hero.webp')",
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/15b28ac8-11d0-43bb-99d0-049c742f9c3c/2C836F76-D7A1-4316-BAD9-C104FA227A5B.JPG')",
         }}
       >
         <div className="max-w-[90%] mx-auto w-full">
@@ -41,7 +41,7 @@ export default function HomePage() {
         className="relative py-32 px-6 bg-brand-black text-white text-center bg-cover bg-center overflow-hidden"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/images/backgrounds/cta.webp')",
+            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/8521943a-7a9d-442d-9a62-51f84b579f58/https___specials-images.forbesimg.com_imageserve_5f8ee8e39ae6d58f0294ac64_0x0.jpg')",
         }}
       >
         <div className="max-w-3xl mx-auto flex flex-col items-center relative z-10">
