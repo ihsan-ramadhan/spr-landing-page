@@ -8,6 +8,12 @@ export default function AboutPage() {
 
   return (
     <div className="bg-white">
+      <link
+        rel="preload"
+        as="image"
+        href="https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/45247612-f260-475a-82d1-cfd99900dd30/IMG_2479l.jpg"
+        fetchPriority="high"
+      />
       <ParallaxBackground
         className="relative min-h-[50vh] bg-brand-black flex items-end py-20 px-6 bg-cover bg-center"
         style={{

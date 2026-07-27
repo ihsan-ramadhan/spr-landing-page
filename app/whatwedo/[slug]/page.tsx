@@ -33,6 +33,14 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
 
   return (
     <div className="bg-white">
+      {project.heroImage && (
+        <link
+          rel="preload"
+          as="image"
+          href={project.heroImage}
+          fetchPriority="high"
+        />
+      )}
       <ParallaxBackground
         className="relative min-h-[40vh] bg-brand-black flex items-end py-16 px-6 bg-cover bg-center"
         style={{

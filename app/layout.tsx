@@ -31,6 +31,14 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${poppins.variable} ${manrope.variable}`}>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/15b28ac8-11d0-43bb-99d0-049c742f9c3c/2C836F76-D7A1-4316-BAD9-C104FA227A5B.JPG?format=1500w"
+          fetchPriority="high"
+        />
+      </head>
       <body className="flex flex-col min-h-screen font-manrope text-foreground bg-background">
         <Navbar />
         <main className="grow">{children}</main>
