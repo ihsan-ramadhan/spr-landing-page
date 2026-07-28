@@ -2,10 +2,8 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
+    loader: 'custom',
+    loaderFile: './lib/imageLoader.ts',
   },
 };
 

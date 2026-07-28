@@ -1,0 +1,42 @@
+{
+  "slug": "renewable-nickel-battery-materials",
+  "title": "Renewable Nickel Battery Materials",
+  "subtitle": "Phase II & III",
+  "summary": "Strategic expansion into EV battery materials via HPAL processing, producing Ni Matte, NiSO4, and MHP with renewable energy investments.",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641150447813-65XOL4PTQIP5OA4CD5Z4/7F04E3B4-7D99-4BB2-BBF7-50B4010EE143.JPG",
+  "order": 6,
+  "featured": false,
+  "stats": [
+    { "label": "Phase", "value": "II & III" },
+    { "label": "HPAL Capacity", "value": "20-30", "unit": "ktpa" },
+    { "label": "Products", "value": "Ni Matte + NiSO₄" },
+    { "label": "Energy Source", "value": "Solar & Wind" }
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": [
+        "Phase II & Phase III — Achieving Renewable \"Green\" Nickel Battery Materials",
+        "",
+        "With respect to climate change, we have positioned ourselves to contribute in achieving zero net carbon dioxide emissions. Our strategy to cooperate with PLN and build power transmission line to connect Konawe Utara ASPIRE Stargate Industrial Park to the Sulawesi National Grid is to have vast possibilities to invest in renewable energy in any other locations in Sulawesi.",
+        "",
+        "Phase II includes:",
+        "- Ni Matte Processing plant + NiSO₄ Processing plant",
+        "- Industrial Park infrastructure upgrades: main roads, jetties and seaports",
+        "- Solar farm investments",
+        "",
+        "Phase III includes:",
+        "- 20-30ktpa HPAL hydrometallurgy processing is being considered",
+        "- Expansions of solar farm investments",
+        "- Wind farm investments"
+      ]
+    },
+    {
+      "heading": "Sustainability Commitment",
+      "body": [
+        "By utilizing High-Pressure Acid Leach (HPAL) processing, lower-grade limonite ore will be processed into Mixed Hydroxide Precipitate (MHP), Cobalt Sulfate, and Nickel Sulfate for the EV battery supply chain.",
+        "Includes dry stacking residue solutions and zero liquid discharge goals, reducing land impact and completely bypassing deep-sea tailings disposal methods."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "ASPIRE",
+  "legalName": "PT Anugerah Surya Pacific Resources",
+  "address": "Konawe Utara, Southeast Sulawesi, Indonesia",
+  "investorAddress": "Equity Tower 19th Floor Unit G-H\nJl. Jend. Sudirman Kav 52-53\nJakarta 12190\nIndonesia",
+  "email": "nickel@stargate.aspire.id",
+  "social": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "What we do",
+      "href": "/whatwedo"
+    },
+    {
+      "label": "Governance",
+      "href": "/governance"
+    },
+    {
+      "label": "Careers",
+      "href": "/careers"
+    },
+    {
+      "label": "Investors",
+      "href": "/investors"
+    }
+  ]
+}
