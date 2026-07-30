@@ -43,24 +43,31 @@ export default function Reveal({
       ease: ANIMATION_DEFAULTS.ease,
     };
 
+    const toVars = {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      duration,
+      delay,
+      ease: ANIMATION_DEFAULTS.ease,
+    };
+
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        el,
-        fromVars,
-        {
-          opacity: 1,
-          x: 0,
-          y: 0,
-          duration,
-          delay,
-          ease: ANIMATION_DEFAULTS.ease,
+      const rect = el.getBoundingClientRect();
+      const alreadyInView = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (alreadyInView) {
+        gsap.fromTo(el, fromVars, toVars);
+      } else {
+        gsap.fromTo(el, fromVars, {
+          ...toVars,
           scrollTrigger: {
             trigger: el,
             start,
             once,
           },
-        },
-      );
+        });
+      }
     }, el);
 
     return () => ctx.revert();
