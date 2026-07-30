@@ -3,11 +3,18 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import type { UIStrings } from '../../lib/content';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function CareersActions() {
+interface CareersActionsProps {
+  ui?: UIStrings;
+}
+
+export default function CareersActions({ ui }: CareersActionsProps = {}) {
   const btnRef = useRef<HTMLAnchorElement>(null);
+  const joinNow = ui?.cta.joinNow ?? 'Join Now';
+  const emailCvPrompt = ui?.cta.emailCvPrompt ?? 'Email your CV or resume to:';
 
   useEffect(() => {
     const btn = btnRef.current;
@@ -39,13 +46,13 @@ export default function CareersActions() {
 
   return (
     <div className="flex flex-col items-center space-y-4">
-      <p className="text-sm text-gray-400 font-medium">Email your CV or resume to:</p>
+      <p className="text-sm text-gray-400 font-medium">{emailCvPrompt}</p>
       <a
         ref={btnRef}
         href="mailto:career@aspire.id"
         className="inline-flex px-8 py-3.5 bg-brand-black text-white font-normal tracking-wider uppercase hover:bg-brand-primary transition-all duration-300 rounded hover:shadow-lg hover:scale-[1.03] active:scale-95"
       >
-        Join Now
+        {joinNow}
       </a>
       <a
         href="mailto:career@aspire.id"

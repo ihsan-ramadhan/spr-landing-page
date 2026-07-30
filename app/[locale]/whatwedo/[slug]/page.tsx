@@ -1,35 +1,44 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getProjects, getProjectBySlug } from '../../../lib/content';
-import StatCard from '../../../components/ui/StatCard';
-import Reveal from '../../../components/ui/Reveal';
-import ParallaxBackground from '../../../components/ui/ParallaxBackground';
-import ProjectMap from '../../../components/ui/ProjectMap';
+import { getProjects, getProjectBySlug, getSiteConfig, isLocale, DEFAULT_LOCALE, LOCALES } from '../../../../lib/content';
+import StatCard from '../../../../components/ui/StatCard';
+import Reveal from '../../../../components/ui/Reveal';
+import ParallaxBackground from '../../../../components/ui/ParallaxBackground';
+import ProjectMap from '../../../../components/ui/ProjectMap';
 import { use } from 'react';
 
 interface ProjectPageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 }
 
 export function generateStaticParams() {
-  const projects = getProjects();
-  return projects.map((project) => ({
-    slug: project.slug,
-  }));
+  const all = LOCALES.flatMap((locale) =>
+    getProjects(locale).map((project) => ({
+      slug: project.slug,
+      locale,
+    })),
+  );
+  return all;
 }
 
 export default function ProjectDetailPage({ params }: ProjectPageProps) {
   const resolvedParams = use(params);
-  const project = getProjectBySlug(resolvedParams.slug);
+  const { slug, locale } = resolvedParams;
+  const loc = isLocale(locale) ? locale : DEFAULT_LOCALE;
+
+  const project = getProjectBySlug(slug, loc);
   if (!project) {
     notFound();
   }
 
-  const projects = getProjects();
+  const projects = getProjects(loc);
   const currentIndex = projects.findIndex((p) => p.slug === project.slug);
   const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
   const nextProject = currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+
+  const ui = getSiteConfig(loc).ui.whatWeDo;
+  const base = `/${loc}/whatwedo`;
 
   return (
     <div className="bg-white">
@@ -82,7 +91,7 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
           <div className="max-w-[90%] mx-auto px-6 py-12">
             <Reveal direction="up" delay={0.1}>
               <h2 className="text-xl md:text-2xl font-normal mb-2 font-poppins text-gray-900">
-                Site Location
+                {ui.siteLocation}
               </h2>
               <p className="text-sm text-gray-500 mb-6">{project.mapCoordinates.label}</p>
             </Reveal>
@@ -142,11 +151,11 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
           <div>
             {prevProject ? (
               <Link
-                href={`/whatwedo/${prevProject.slug}`}
+                href={`${base}/${prevProject.slug}`}
                 className="group flex flex-col items-start space-y-1"
               >
                 <span className="text-xs font-normal text-gray-400 uppercase tracking-wider">
-                  Previous Project
+                  {ui.prevProject}
                 </span>
                 <span className="text-gray-900 group-hover:text-brand-primary group-hover:-translate-x-0.5 inline-block transition-all duration-300">
                   &larr; {prevProject.title}
@@ -159,11 +168,11 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
           <div>
             {nextProject ? (
               <Link
-                href={`/whatwedo/${nextProject.slug}`}
+                href={`${base}/${nextProject.slug}`}
                 className="group flex flex-col items-end space-y-1"
               >
                 <span className="text-xs font-normal text-gray-400 uppercase tracking-wider">
-                  Next Project
+                  {ui.nextProject}
                 </span>
                 <span className="text-gray-900 group-hover:text-brand-primary group-hover:translate-x-0.5 inline-block transition-all duration-300">
                   {nextProject.title} &rarr;

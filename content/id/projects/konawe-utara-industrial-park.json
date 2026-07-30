@@ -1,0 +1,49 @@
+{
+  "slug": "konawe-utara-industrial-park",
+  "title": "Taman Industri ASPIRE Stargate Konawe Utara",
+  "subtitle": "PT Stargate Mineral Asia",
+  "summary": "Taman industri ekologis strategis di Konawe Utara yang dirancang oleh MottMac, menampilkan smelter terintegrasi, pelabuhan laut dalam, dan infrastruktur energi terbarukan.",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641177694519-7G24WY4ZX99ZQYQBRAYW/5FD356A1-5BDA-40DE-B2F2-D22F1B459990.JPG",
+  "order": 5,
+  "featured": true,
+  "images": [
+    "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641149442232-U7XNNSNG24VWGTC3TGIX/E918B669-F8A2-4323-82CC-B7A8869B0886+2.jpg",
+    "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/4de9f464-ad93-47f0-95f4-24fdbec2e99d/Screenshot+2022-01-06+at+9.00.01+AM.png"
+  ],
+  "stats": [
+    { "label": "Perancang Induk", "value": "MottMac" },
+    { "label": "Daya Direncanakan", "value": "450", "unit": "MW PLTGU" },
+    { "label": "Kapasitas HPAL", "value": "30,000", "unit": "tpa" },
+    { "label": "Lokasi Strategis", "value": "Teluk Matarape" }
+  ],
+  "sections": [
+    {
+      "heading": "Ikhtisar",
+      "body": [
+        "Tanah paling strategis dan sesuai untuk kawasan industri di wilayah sekitarnya yang kaya nikel terletak di konsesi Stargate.",
+        "Keunggulan Stargate bukan endapan nikelnya. Melainkan lokasinya, sesuai namanya, Stargate adalah gerbang menuju endapan nikel terbesar di Konawe Utara.",
+        "Pasokan bijih dari endapan sekitarnya akan memiliki biaya transportasi rendah melalui jalan darat.",
+        "Terletak di jantung Teluk Matarape, pelabuhan Stargate memiliki kedalaman air yang cukup dan ruang tambat yang aman untuk menampung kapal besar.",
+        "Dan sebagai satu-satunya dengan lahan yang sesuai untuk pabrik industri berukuran besar, Stargate memiliki keunggulan kompetitif untuk menjadi pusat pengolahan nikel terkemuka di wilayah tersebut."
+      ]
+    },
+    {
+      "heading": "Desain Master Plan",
+      "body": [
+        "Stargate telah menunjuk MottMac untuk merancang Masterplan Taman Industri Indonesia ASPIREstargate, yang akan mencakup:",
+        "WBS5000 – INFRASTRUKTUR",
+        "1. Dermaga / Pelabuhan (5200)\na. Pelabuhan Molore dan Pelabuhan Lameruru\nb. saling berhubungan atau melengkapi satu sama lain\nc. Melayani:\ni. kapal kargo curah;\nii. kapal kargo kontainer;\niii. kapal LNG;\niv. kapal tunda dan tongkang;\nd. Fasilitas dermaga atau pelabuhan lainnya.",
+        "2. Infrastruktur Air (5500):\ntermasuk pengolahan air untuk menghasilkan air bersih dan menyuplai air ke pabrik pengolahan (termasuk fasilitas layanan utilitas lainnya).",
+        "3. Pengolahan limbah industri dan pengolahan air bekas (5600), fasilitas pengelolaan limbah taman industri.",
+        "5. Gedung kantor (5120) untuk manajemen taman industri.",
+        "6. Pemadam kebakaran & stasiun darurat lainnya (5130).",
+        "7. Fasilitas penunjang (5140), yaitu bengkel, layanan teknik, pabrik kecil, dll.",
+        "8. Pusat bisnis (5120) dan fasilitas penunjang (akan ditempatkan di luar gerbang utama taman industri).",
+        "9. Camp dan kawasan permukiman (6000)\na. penginapan bagi manajer\nb. tempat tinggal pekerja\nc. hotel\nd. toko, perbelanjaan, dll.",
+        "10. Fasilitas infrastruktur:\na. (5100) jalan (spesifikasi untuk zona industri)\nb. (5150) telekomunikasi (termasuk jaringan serat optik & BTS)\nc. (5320) jaringan distribusi daya\nd. (5540) jaringan distribusi air minum\ne. (5600) jaringan air limbah & saluran f. (5100) drainase\ng. jaringan distribusi gas (untuk dikonfirmasi)",
+        "11. Lokasi Pembangkit Listrik (7000) (pembangkit listrik LNG 450 MW) dan gardu, serta fasilitas terkait pusat listrik lainnya.",
+        "12. Pabrik utama:\na. 4x33 MW Rotary Kiln Electric Furnace\nb. Ni-matte & NiSO4 Atmospheric Leaching\nc. Hydromet High Pressured Acid Leaching (HPAL) - 30.000 tpa"
+      ]
+    }
+  ]
+}

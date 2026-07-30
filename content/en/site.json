@@ -1,0 +1,101 @@
+{
+  "name": "ASPIRE",
+  "legalName": "PT Anugerah Surya Pacific Resources",
+  "address": "Konawe Utara, Southeast Sulawesi, Indonesia",
+  "investorAddress": "Equity Tower 19th Floor Unit G-H\nJl. Jend. Sudirman Kav 52-53\nJakarta 12190\nIndonesia",
+  "email": "nickel@stargate.aspire.id",
+  "social": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "What we do",
+      "href": "/whatwedo"
+    },
+    {
+      "label": "Governance",
+      "href": "/governance"
+    },
+    {
+      "label": "Careers",
+      "href": "/careers"
+    },
+    {
+      "label": "Investors",
+      "href": "/investors"
+    }
+  ],
+  "ui": {
+    "languageToggle": "EN",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "cta": {
+      "learnMore": "Learn more",
+      "ourFuture": "Our future",
+      "joinNow": "Join Now",
+      "emailCvPrompt": "Email your CV or resume to:"
+    },
+    "home": {
+      "heroText": "Our pure and renewable journey together.",
+      "introText": "We are passionate in creating a better present and let's start from within ourselves.",
+      "nickelHeading": "Achieving Renewable \"Green\" Nickel Battery Materials",
+      "nickelButton": "Our future"
+    },
+    "about": {
+      "purposeHeading": "Our Purpose",
+      "purposeH1": "Let's build our nations through our pure and renewable journey together.",
+      "companyName": "PT Anugerah Surya Pacific Resources (ASPIRE)",
+      "assetLine": "ASPIRE's most valuable assets are the aspirations of our people.",
+      "journeyHeading": "Our pure and renewable journey together.",
+      "purposeSectionHeading": "Our Purpose",
+      "purposeH3": "Let's build our nations through our pure and renewable green nickel production",
+      "visionSectionHeading": "Our Vision",
+      "visionH3": "Let's become world-class green nickel producer with supreme commitment and determination",
+      "valuesSectionHeading": "Our Values",
+      "valuesH3": "Let's commit ourselves and let's start now.",
+      "commitmentLabel": "Our commitment is to value:",
+      "historyHeading": "Our History, Our Present and Our Future",
+      "ourStoryLabel": "Our Story",
+      "milestonesLabel": "Milestones",
+      "ariaMilestonesLabel": "Company milestones"
+    },
+    "governance": {
+      "title": "Corporate Governance",
+      "intro": "In order to achieve our purpose and goals, ASPIREstargate has the utmost sincere commitment to keep improving our corporate governance with independency of responsibility, fairness and equality.",
+      "structure": "Corporate Governance Structure"
+    },
+    "careers": {
+      "title": "Join us. Be ASPIRE.",
+      "subtitle": "Let's make good impact to the world. Let's achieve our aspirations.",
+      "body": "Whatever your education background or your expertise is, we welcome your pure self to join us."
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "siteLocation": "Site Location",
+      "prevProject": "Previous Project",
+      "nextProject": "Next Project"
+    },
+    "investors": {
+      "title": "Investors Relations",
+      "address": "Address",
+      "contact": "Contact"
+    },
+    "footer": {
+      "siteMap": "Site Map",
+      "socialLinks": "Social Links",
+      "aboutLink": "About ASPIRE Stargate",
+      "getInvolved": "Get Involved",
+      "rights": "All rights reserved."
+    }
+  }
+}

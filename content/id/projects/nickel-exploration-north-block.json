@@ -1,0 +1,35 @@
+{
+  "slug": "nickel-exploration-north-block",
+  "title": "Eksplorasi Nikel",
+  "subtitle": "PT Stargate Dua Pasific Resources — Endapan North Block",
+  "summary": "Program definisi sumber daya dan pengeboran di North Block dengan potensi kadar tinggi hingga 3,12% nikel, mencakup konsesi 461,1 Ha.",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641110281086-Q1GXVN2NC6QABTPPNH3O/FA732E25-B55D-4CF7-A6EC-495D806E12F7+2.jpg",
+  "order": 2,
+  "featured": false,
+  "stats": [
+    { "label": "Luas Konsesi", "value": "461.1", "unit": "ha" },
+    { "label": "Lubang Bor", "value": "144", "unit": "lubang" },
+    { "label": "Panjang Sampel", "value": "2,880", "unit": "m" },
+    { "label": "Kadar Tertinggi", "value": "3.12", "unit": "% Ni" }
+  ],
+  "sections": [
+    {
+      "heading": "Ikhtisar",
+      "body": [
+        "North IUP menunjukkan potensi endapan yang besar dengan kadar tinggi hingga 3,12% nikel dari sampel 30 lubang uji yang dilakukan sebelumnya pada tahun 2010.",
+        "Stargate telah memulai program eksplorasi pengeboran sesuai JORC pada Juli 2021 untuk mengonfirmasi potensi endapan kadar tinggi. Program tahap 1 terdiri dari grid lubang bor 400x200 dan grid infill hingga 50x50 di area prospektif. Survei GPR juga dilakukan untuk mengidentifikasi lapisan batuan dasar dan membatasi perhitungan endapan.",
+        "Hasil pengeboran sementara dari 144 lubang bor (sekitar 2.880 m sampel) akan dilaporkan mulai Desember 2021 dan selesai pada April 2022."
+      ]
+    },
+    {
+      "heading": "Izin Pertambangan",
+      "body": [
+        "Tahap: IUP Produksi",
+        "Status: Bersih & Jelas",
+        "Total luas: 461,1 Ha",
+        "Berakhir: 1-Feb-2031 (hingga 2051)",
+        "Dapat Diperpanjang: @ 10 tahun sekali"
+      ]
+    }
+  ]
+}

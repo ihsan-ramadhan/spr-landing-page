@@ -14,6 +14,9 @@ interface TimelineItem {
 
 interface TimelineProps {
   items: TimelineItem[];
+  ourStoryLabel?: string;
+  milestonesLabel?: string;
+  ariaMilestonesLabel?: string;
 }
 
 const PHASE_STYLES: Record<string, { dot: string }> = {
@@ -168,7 +171,12 @@ function TimelineItemRow({
   );
 }
 
-export default function Timeline({ items }: TimelineProps) {
+export default function Timeline({
+  items,
+  ourStoryLabel = 'Our Story',
+  milestonesLabel = 'Milestones',
+  ariaMilestonesLabel = 'Company milestones',
+}: TimelineProps) {
   const headerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -221,14 +229,14 @@ export default function Timeline({ items }: TimelineProps) {
       <div ref={headerRef} className="text-center mb-14 md:mb-20">
         <div className="inline-flex items-center gap-2 text-xs font-normal uppercase tracking-[0.2em] text-brand-primary bg-brand-primary/5 px-4 py-1.5 rounded-full mb-3 timeline-header-item">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-primary" />
-          Our Story
+          {ourStoryLabel}
         </div>
         <h3 className="text-3xl md:text-4xl font-normal font-poppins text-gray-900 tracking-tight timeline-header-item">
-          Milestones
+          {milestonesLabel}
         </h3>
       </div>
 
-      <ol className="relative list-none p-0 m-0" aria-label="Company milestones">
+      <ol className="relative list-none p-0 m-0" aria-label={ariaMilestonesLabel}>
         {items.map((item, idx) => (
           <TimelineItemRow
             key={idx}

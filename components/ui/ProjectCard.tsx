@@ -7,9 +7,11 @@ import Reveal from './Reveal';
 interface ProjectCardProps {
   project: Project;
   index?: number;
+  learnMoreLabel?: string;
+  locale?: string;
 }
 
-export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+export default function ProjectCard({ project, index = 0, learnMoreLabel = 'Learn more', locale = 'en' }: ProjectCardProps) {
   return (
     <Reveal direction="up" delay={index * 0.1} once>
       <div className="group flex flex-col space-y-4">
@@ -35,10 +37,10 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         </div>
         <div>
           <Link
-            href={`/whatwedo/${project.slug}`}
+            href={`/${locale}/whatwedo/${project.slug}`}
             className="relative inline-flex items-center text-sm font-normal text-brand-primary pb-0.5 group/link"
           >
-            <span>Learn more</span>
+            <span>{learnMoreLabel}</span>
             <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-brand-primary transition-all duration-300 group-hover/link:w-full" />
           </Link>
         </div>
