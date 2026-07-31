@@ -1,4 +1,5 @@
 import { getProjects, getSiteConfig, isLocale, DEFAULT_LOCALE } from '../../lib/content';
+import { pageMetadata } from '../../lib/metadata';
 import ProjectCard from '../../components/ui/ProjectCard';
 import Reveal from '../../components/ui/Reveal';
 import ParallaxBackground from '../../components/ui/ParallaxBackground';
@@ -6,6 +7,11 @@ import HeroAnimation from '../../components/home/HeroAnimation';
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: HomePageProps) {
+  const { locale } = await params;
+  return pageMetadata('home', locale);
 }
 
 export default async function HomePage({ params }: HomePageProps) {

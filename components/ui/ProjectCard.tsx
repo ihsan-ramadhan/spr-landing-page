@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Project } from '../../lib/content';
 import Reveal from './Reveal';
 
@@ -16,10 +17,12 @@ export default function ProjectCard({ project, index = 0, learnMoreLabel = 'Lear
     <Reveal direction="up" delay={index * 0.1} once>
       <div className="group flex flex-col space-y-4">
         <div className="relative aspect-4/3 overflow-hidden bg-gray-100 rounded-lg">
-          <img
+          <Image
             src={project.heroImage}
             alt={project.title}
-            className="object-cover w-full h-full"
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div>

@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import { prefersReducedMotion } from '../../lib/motion';
 
 interface HeroAnimationProps {
   text: string;
@@ -17,6 +18,11 @@ export default function HeroAnimation({ text }: HeroAnimationProps) {
     if (!heading) return;
 
     const wordSpans = heading.querySelectorAll('.hero-word');
+
+    if (prefersReducedMotion()) {
+      gsap.set(wordSpans, { opacity: 1, y: 0, rotateX: 0 });
+      return;
+    }
 
     const ctx = gsap.context(() => {
       gsap.fromTo(

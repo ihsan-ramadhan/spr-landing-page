@@ -1,9 +1,15 @@
 import { getSiteConfig, isLocale, DEFAULT_LOCALE } from '../../../lib/content';
+import { pageMetadata } from '../../../lib/metadata';
 import Reveal from '../../../components/ui/Reveal';
 import Image from 'next/image';
 
 interface GovernancePageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: GovernancePageProps) {
+  const { locale } = await params;
+  return pageMetadata('governance', locale);
 }
 
 export default async function GovernancePage({ params }: GovernancePageProps) {

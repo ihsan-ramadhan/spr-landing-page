@@ -15,8 +15,16 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'ASPIRE',
+  metadataBase: new URL('https://aspire.id'),
+  title: {
+    default: 'ASPIRE',
+    template: '%s | ASPIRE',
+  },
   description: 'Our pure and renewable journey together.',
+  openGraph: {
+    type: 'website',
+    siteName: 'ASPIRE',
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${manrope.variable}`}>
       <body className="flex flex-col min-h-screen font-manrope text-foreground bg-background">
+        <a href="#main-content" className="skip-to-main">Skip to main content</a>
         {children}
       </body>
     </html>

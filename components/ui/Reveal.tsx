@@ -4,6 +4,7 @@ import { ReactNode, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ANIMATION_DEFAULTS, type RevealDirection, getFromVars } from '../../lib/animations';
+import { prefersReducedMotion } from '../../lib/motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,6 +38,11 @@ export default function Reveal({
   useEffect(() => {
     const el = ref.current;
     if (!el || disabled) return;
+
+    if (prefersReducedMotion()) {
+      gsap.set(el, { opacity: 1, x: 0, y: 0 });
+      return;
+    }
 
     const fromVars = {
       ...getFromVars(direction, distance || ANIMATION_DEFAULTS.slideDistance),

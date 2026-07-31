@@ -1,9 +1,15 @@
 import { getSiteConfig, isLocale, DEFAULT_LOCALE } from '../../../lib/content';
+import { pageMetadata } from '../../../lib/metadata';
 import Reveal from '../../../components/ui/Reveal';
 import CareersActions from '../../../components/careers/CareersActions';
 
 interface CareersPageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: CareersPageProps) {
+  const { locale } = await params;
+  return pageMetadata('careers', locale);
 }
 
 export default async function CareersPage({ params }: CareersPageProps) {

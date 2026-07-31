@@ -1,8 +1,14 @@
 import { getSiteConfig, isLocale, DEFAULT_LOCALE } from '../../../lib/content';
+import { pageMetadata } from '../../../lib/metadata';
 import Reveal from '../../../components/ui/Reveal';
 
 interface InvestorsPageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: InvestorsPageProps) {
+  const { locale } = await params;
+  return pageMetadata('investors', locale);
 }
 
 export default async function InvestorsPage({ params }: InvestorsPageProps) {

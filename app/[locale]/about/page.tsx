@@ -1,10 +1,16 @@
 import { getAboutContent, getSiteConfig, isLocale, DEFAULT_LOCALE } from '../../../lib/content';
+import { pageMetadata } from '../../../lib/metadata';
 import Timeline from '../../../components/ui/Timeline';
 import Reveal from '../../../components/ui/Reveal';
 import ParallaxBackground from '../../../components/ui/ParallaxBackground';
 
 interface AboutPageProps {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: AboutPageProps) {
+  const { locale } = await params;
+  return pageMetadata('about', locale);
 }
 
 export default async function AboutPage({ params }: AboutPageProps) {

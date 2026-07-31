@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getProjects, getProjectBySlug, getSiteConfig, isLocale, DEFAULT_LOCALE, LOCALES } from '../../../../lib/content';
+import { projectMetadata } from '../../../../lib/metadata';
 import StatCard from '../../../../components/ui/StatCard';
 import Reveal from '../../../../components/ui/Reveal';
 import ParallaxBackground from '../../../../components/ui/ParallaxBackground';
@@ -20,6 +21,14 @@ export function generateStaticParams() {
     })),
   );
   return all;
+}
+
+export async function generateMetadata({ params }: ProjectPageProps) {
+  const { slug, locale } = await params;
+  const loc = isLocale(locale) ? locale : DEFAULT_LOCALE;
+  const project = getProjectBySlug(slug, loc);
+  if (!project) return {};
+  return projectMetadata(project.title, project.summary, loc);
 }
 
 export default function ProjectDetailPage({ params }: ProjectPageProps) {
