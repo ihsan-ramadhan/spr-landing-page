@@ -67,7 +67,11 @@
       "historyHeading": "Our History, Our Present and Our Future",
       "ourStoryLabel": "Our Story",
       "milestonesLabel": "Milestones",
-      "ariaMilestonesLabel": "Company milestones"
+      "ariaMilestonesLabel": "Company milestones",
+      "storiesHeading": "Our Stories",
+      "storiesSubtext": "Read the latest updates, stories, and insights from our journey.",
+      "readMoreLabel": "Read more",
+      "externalUrl": "#"
     },
     "governance": {
       "title": "Corporate Governance",

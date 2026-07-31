@@ -156,6 +156,33 @@ export default async function AboutPage({ params }: AboutPageProps) {
           </div>
         </div>
       </section>
+
+      <section className="py-20 px-6 bg-white border-t border-gray-100">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <Reveal direction="up" delay={0.1}>
+            <h2 className="text-3xl md:text-4xl font-normal font-poppins text-gray-900">
+              {ui.storiesHeading}
+            </h2>
+          </Reveal>
+          <Reveal direction="up" delay={0.2}>
+            <p className="text-gray-500 leading-relaxed max-w-xl mx-auto">
+              {ui.storiesSubtext}
+            </p>
+          </Reveal>
+          {ui.externalUrl && ui.externalUrl !== '#' && (
+            <Reveal direction="up" delay={0.3}>
+              <a
+                href={ui.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex px-6 py-3 border border-gray-300 text-sm font-normal tracking-wider uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 rounded"
+              >
+                {ui.readMoreLabel}
+              </a>
+            </Reveal>
+          )}
+        </div>
+      </section>
     </div>
   );
 }

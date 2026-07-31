@@ -43,6 +43,10 @@ export interface UIStrings {
     ourStoryLabel: string;
     milestonesLabel: string;
     ariaMilestonesLabel: string;
+    storiesHeading: string;
+    storiesSubtext: string;
+    readMoreLabel: string;
+    externalUrl: string;
   };
   governance: {
     title: string;

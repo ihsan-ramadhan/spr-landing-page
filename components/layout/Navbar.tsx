@@ -24,7 +24,6 @@ export default function Navbar({ nav, ui, locale, altText }: NavbarProps) {
 
   const closeMenu = useCallback(() => setMenuOpen(false), []);
 
-  // Strip the leading /<locale> from pathname so active checks match cleaned hrefs.
   const cleanedPath = pathname.replace(/^\/(en|id)(?=\/|$)/, '') || '/';
   const otherLocale: Locale = locale === 'en' ? 'id' : 'en';
   const toggleHref = pathname.replace(/^\/en/, '/' + otherLocale).replace(/^\/id/, '/' + otherLocale) || '/' + otherLocale;

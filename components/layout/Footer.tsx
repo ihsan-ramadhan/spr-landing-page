@@ -86,6 +86,16 @@ export default function Footer({ name, address, email, social, legalName, ui, lo
             <Link href={`/${locale}/careers`} className="hover:text-white transition-colors">
               {ui.footer.getInvolved}
             </Link>
+            {ui.about.externalUrl && ui.about.externalUrl !== '#' && (
+              <a
+                href={ui.about.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                {ui.about.storiesHeading}
+              </a>
+            )}
           </div>
         </div>
 

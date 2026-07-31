@@ -67,7 +67,11 @@
       "historyHeading": "Sejarah Kami, Masa Kini dan Masa Depan Kami",
       "ourStoryLabel": "Kisah Kami",
       "milestonesLabel": "Tonggak Sejarah",
-      "ariaMilestonesLabel": "Tonggak sejarah perusahaan"
+      "ariaMilestonesLabel": "Tonggak sejarah perusahaan",
+      "storiesHeading": "Kisah Kami",
+      "storiesSubtext": "Baca kabar terbaru, kisah, dan wawasan dari perjalanan kami.",
+      "readMoreLabel": "Selengkapnya",
+      "externalUrl": "#"
     },
     "governance": {
       "title": "Tata Kelola Perusahaan",
