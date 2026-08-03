@@ -1,7 +1,5 @@
-// ponytail: custom loader to optimize images from Squarespace CDN based on layout width requests
 export default function sqspLoader({ src, width }: { src: string; width: number }) {
   if (src.includes('squarespace-cdn.com') || src.includes('static1.squarespace.com')) {
-    // Squarespace supported formats: 100w, 300w, 500w, 750w, 1000w, 1500w, 2500w
     let format = '1000w';
     if (width <= 100) format = '100w';
     else if (width <= 300) format = '300w';
@@ -17,7 +15,6 @@ export default function sqspLoader({ src, width }: { src: string; width: number 
   return src;
 }
 
-// ponytail: check execution block for verification
 if (import.meta.url.startsWith('file:') && process.argv[1] === new URL(import.meta.url).pathname) {
   const testUrl = 'https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/logo.png';
   const out1 = sqspLoader({ src: testUrl, width: 250 });

@@ -1,10 +1,23 @@
-import { getAboutContent } from '../../lib/content';
-import Timeline from '../../components/ui/Timeline';
-import Reveal from '../../components/ui/Reveal';
-import ParallaxBackground from '../../components/ui/ParallaxBackground';
+import { getAboutContent, getSiteConfig, isLocale, DEFAULT_LOCALE } from '../../../lib/content';
+import { pageMetadata } from '../../../lib/metadata';
+import Timeline from '../../../components/ui/Timeline';
+import Reveal from '../../../components/ui/Reveal';
+import ParallaxBackground from '../../../components/ui/ParallaxBackground';
 
-export default function AboutPage() {
-  const content = getAboutContent();
+interface AboutPageProps {
+  readonly params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: AboutPageProps) {
+  const { locale } = await params;
+  return pageMetadata('about', locale);
+}
+
+export default async function AboutPage({ params }: AboutPageProps) {
+  const { locale } = await params;
+  const loc = isLocale(locale) ? locale : DEFAULT_LOCALE;
+  const content = getAboutContent(loc);
+  const ui = getSiteConfig(loc).ui.about;
 
   return (
     <div className="bg-white">
@@ -24,12 +37,12 @@ export default function AboutPage() {
         <div className="max-w-[90%] mx-auto w-full">
           <Reveal direction="up" delay={0.1}>
             <h2 className="text-white text-lg font-normal uppercase tracking-wider mb-2 font-poppins">
-              Our Purpose
+              {ui.purposeHeading}
             </h2>
           </Reveal>
           <Reveal direction="up" delay={0.3}>
             <h1 className="text-white text-3xl md:text-5xl font-normal max-w-4xl leading-tight font-poppins">
-              Let&rsquo;s build our nations through our pure and renewable journey together.
+              {ui.purposeH1}
             </h1>
           </Reveal>
         </div>
@@ -39,7 +52,7 @@ export default function AboutPage() {
         <div className="max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <Reveal direction="left" delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-normal text-gray-900 font-poppins leading-tight max-w-md">
-              PT Anugerah Surya Pacific Resources (ASPIRE)
+              {ui.companyName}
             </h2>
           </Reveal>
           <Reveal direction="right" delay={0.2}>
@@ -48,7 +61,7 @@ export default function AboutPage() {
                 <p key={idx}>{paragraph}</p>
               ))}
               <p className="font-normal text-gray-900 pt-2">
-                ASPIRE&rsquo;s most valuable assets are the aspirations of our people.
+                {ui.assetLine}
               </p>
             </div>
           </Reveal>
@@ -59,7 +72,7 @@ export default function AboutPage() {
         <div className="max-w-[90%] mx-auto">
           <Reveal direction="up" delay={0.1}>
             <h2 className="text-3xl md:text-5xl font-normal text-gray-900 font-poppins">
-              Our pure and renewable journey together.
+              {ui.journeyHeading}
             </h2>
           </Reveal>
         </div>
@@ -71,10 +84,10 @@ export default function AboutPage() {
             <Reveal direction="left" delay={0.1}>
               <div>
                 <p className="text-xs font-normal uppercase tracking-wider text-gray-400 mb-2">
-                  Our Purpose
+                  {ui.purposeSectionHeading}
                 </p>
                 <h3 className="text-2xl md:text-3xl font-normal text-gray-500 font-poppins max-w-md leading-tight">
-                  Let&rsquo;s build our nations through our pure and renewable green nickel production
+                  {ui.purposeH3}
                 </h3>
               </div>
             </Reveal>
@@ -89,27 +102,17 @@ export default function AboutPage() {
             <Reveal direction="left" delay={0.1}>
               <div>
                 <p className="text-xs font-normal uppercase tracking-wider text-gray-400 mb-2">
-                  Our Vision
+                  {ui.visionSectionHeading}
                 </p>
                 <h3 className="text-2xl md:text-3xl font-normal text-gray-500 font-poppins max-w-md leading-tight">
-                  Let&rsquo;s become world-class green nickel producer with supreme commitment and
-                  determination
+                  {ui.visionH3}
                 </h3>
               </div>
             </Reveal>
             <Reveal direction="right" delay={0.2}>
-              <div className="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base italic pt-6 md:pt-8">
-                <p>
-                  &ldquo;Our present vision is to be the national leader in nickel mining and
-                  processing with supreme commitment to ethical and social and environmental
-                  responsibilities.
-                </p>
-                <p>
-                  Our determination is to productively enrich and nourish the quality of lives of
-                  our people and natural resources through eternal improvement of our efficient
-                  operational excellence.&rdquo;
-                </p>
-              </div>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base italic pt-6 md:pt-8">
+                &ldquo;{content.vision.body}&rdquo;
+              </p>
             </Reveal>
           </div>
 
@@ -117,16 +120,18 @@ export default function AboutPage() {
             <Reveal direction="left" delay={0.1}>
               <div>
                 <p className="text-xs font-normal uppercase tracking-wider text-gray-400 mb-2">
-                  Our Values
+                  {ui.valuesSectionHeading}
                 </p>
                 <h3 className="text-2xl md:text-3xl font-normal text-gray-500 font-poppins max-w-md leading-tight">
-                  Let&rsquo;s commit ourselves and let&rsquo;s start now.
+                  {ui.valuesH3}
                 </h3>
               </div>
             </Reveal>
             <Reveal direction="right" delay={0.2}>
               <div className="space-y-6 pt-6 md:pt-8">
-                <p className="text-sm text-gray-500 font-normal italic">Our commitment is to value:</p>
+                <p className="text-sm text-gray-500 font-normal italic">
+                  {ui.commitmentLabel}
+                </p>
                 <div className="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base italic">
                   {content.values.body.map((value, idx) => (
                     <p key={idx}>{value}</p>
@@ -143,13 +148,45 @@ export default function AboutPage() {
           <div className="text-center">
             <Reveal direction="up" delay={0.1}>
               <h2 className="text-3xl md:text-4xl font-normal text-gray-900 font-poppins">
-                Our History, Our Present and Our Future
+                {ui.historyHeading}
               </h2>
             </Reveal>
           </div>
           <div className="max-w-4xl mx-auto">
-            <Timeline items={content.timeline} />
+            <Timeline
+              items={content.timeline}
+              ourStoryLabel={ui.ourStoryLabel}
+              milestonesLabel={ui.milestonesLabel}
+              ariaMilestonesLabel={ui.ariaMilestonesLabel}
+            />
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-white border-t border-gray-100">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <Reveal direction="up" delay={0.1}>
+            <h2 className="text-3xl md:text-4xl font-normal font-poppins text-gray-900">
+              {ui.storiesHeading}
+            </h2>
+          </Reveal>
+          <Reveal direction="up" delay={0.2}>
+            <p className="text-gray-500 leading-relaxed max-w-xl mx-auto">
+              {ui.storiesSubtext}
+            </p>
+          </Reveal>
+          {ui.externalUrl && ui.externalUrl !== '#' && (
+            <Reveal direction="up" delay={0.3}>
+              <a
+                href={ui.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex px-6 py-3 border border-gray-300 text-sm font-normal tracking-wider uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 rounded"
+              >
+                {ui.readMoreLabel}
+              </a>
+            </Reveal>
+          )}
         </div>
       </section>
     </div>

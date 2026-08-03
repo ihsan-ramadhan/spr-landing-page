@@ -1,0 +1,106 @@
+{
+  "name": "ASPIRE",
+  "legalName": "PT Anugerah Surya Pacific Resources",
+  "address": "Konawe Utara, Sulawesi Tenggara, Indonesia",
+  "investorAddress": "Equity Tower Lantai 19 Unit G-H\nJl. Jend. Sudirman Kav 52-53\nJakarta 12190\nIndonesia",
+  "email": "nickel@stargate.aspire.id",
+  "social": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com"
+  },
+  "nav": [
+    {
+      "label": "Beranda",
+      "href": "/"
+    },
+    {
+      "label": "Tentang",
+      "href": "/about"
+    },
+    {
+      "label": "Kegiatan Kami",
+      "href": "/whatwedo"
+    },
+    {
+      "label": "Tata Kelola",
+      "href": "/governance"
+    },
+    {
+      "label": "Karir",
+      "href": "/careers"
+    },
+    {
+      "label": "Investor",
+      "href": "/investors"
+    }
+  ],
+  "ui": {
+    "languageToggle": "ID",
+    "languageToggleLabel": "Beralih ke Bahasa Inggris",
+    "menuOpen": "Buka menu",
+    "menuClose": "Tutup menu",
+    "cta": {
+      "learnMore": "Selengkapnya",
+      "ourFuture": "Masa depan kami",
+      "joinNow": "Daftar Sekarang",
+      "emailCvPrompt": "Kirim CV atau resume Anda ke:"
+    },
+    "home": {
+      "heroText": "Perjalanan kita bersama yang murni dan terbarukan.",
+      "introText": "Kami bersemangat dalam menciptakan masa kini yang lebih baik dan mari kita mulai dari dalam diri kita sendiri.",
+      "nickelHeading": "Mencapai Baterai Nikel \"Hijau\" Terbarukan",
+      "nickelButton": "Masa depan kami"
+    },
+    "about": {
+      "purposeHeading": "Tujuan Kami",
+      "purposeH1": "Mari kita membangun bangsa kita melalui perjalanan kita bersama yang murni dan terbarukan.",
+      "companyName": "PT Anugerah Surya Pacific Resources (ASPIRE)",
+      "assetLine": "Aset paling berharga ASPIRE adalah aspirasi dari orang-orang kami.",
+      "journeyHeading": "Perjalanan kita bersama yang murni dan terbarukan.",
+      "purposeSectionHeading": "Tujuan Kami",
+      "purposeH3": "Mari kita membangun bangsa kita melalui produksi nikel hijau murni dan terbarukan",
+      "visionSectionHeading": "Visi Kami",
+      "visionH3": "Mari kita menjadi produsen nikel hijau kelas dunia dengan komitmen tertinggi dan kebulatan tekad",
+      "valuesSectionHeading": "Nilai Kami",
+      "valuesH3": "Mari kita berkomitmen diri sendiri dan mari kita mulai sekarang.",
+      "commitmentLabel": "Komitmen kami adalah menghargai:",
+      "historyHeading": "Sejarah Kami, Masa Kini dan Masa Depan Kami",
+      "ourStoryLabel": "Kisah Kami",
+      "milestonesLabel": "Tonggak Sejarah",
+      "ariaMilestonesLabel": "Tonggak sejarah perusahaan",
+      "storiesHeading": "Kisah Kami",
+      "storiesSubtext": "Baca kabar terbaru, kisah, dan wawasan dari perjalanan kami.",
+      "readMoreLabel": "Selengkapnya",
+      "externalUrl": "#"
+    },
+    "governance": {
+      "title": "Tata Kelola Perusahaan",
+      "intro": "Untuk mencapai tujuan dan sasaran kami, ASPIREstargate memiliki komitmen tulus untuk terus meningkatkan tata kelola perusahaan kami dengan independensi tanggung jawab, keadilan dan kesetaraan.",
+      "structure": "Struktur Tata Kelola Perusahaan"
+    },
+    "careers": {
+      "title": "Bergabunglah dengan kami. Jadilah ASPIRE.",
+      "subtitle": "Mari kita memberikan dampak baik bagi dunia. Mari kita capai aspirasi kita.",
+      "body": "Apa pun latar belakang pendidikan atau keahlian Anda, kami menyambut diri Anda yang tulus untuk bergabung dengan kami."
+    },
+    "whatWeDo": {
+      "title": "Kegiatan Kami",
+      "siteLocation": "Lokasi Situs",
+      "prevProject": "Proyek Sebelumnya",
+      "nextProject": "Proyek Selanjutnya"
+    },
+    "investors": {
+      "title": "Hubungan Investor",
+      "address": "Alamat",
+      "contact": "Kontak"
+    },
+    "footer": {
+      "siteMap": "Peta Situs",
+      "socialLinks": "Tautan Sosial",
+      "aboutLink": "Tentang ASPIRE Stargate",
+      "getInvolved": "Mari Terlibat",
+      "rights": "Seluruh hak cipta dilindungi."
+    }
+  }
+}

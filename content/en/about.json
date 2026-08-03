@@ -22,45 +22,13 @@
     ]
   },
   "timeline": [
-    {
-      "year": "2009",
-      "phase": "history",
-      "body": "PT Stargate commenced mining operation."
-    },
-    {
-      "year": "2013",
-      "phase": "history",
-      "body": "PT Samudera Sejahtera acquired 100% of PT Stargate."
-    },
-    {
-      "year": "2014",
-      "phase": "history",
-      "body": "Indonesia Government banned export of raw nickel ore."
-    },
-    {
-      "year": "2017",
-      "phase": "present",
-      "body": "ASPIRE was established. In April 2017, ASPIRE group acquired 100% of PT Stargate, with the intention of developing PT Stargate into nickel processing company."
-    },
-    {
-      "year": "2021",
-      "phase": "present",
-      "body": "ASPIREstargate restructuring is completed. Signed SPA with PLN for power purchase and supply, and HOA for PLN to build 450MW PLTGU on the site. Appointed MottMac to design its Industrial Park master plan. Awarded EPC Contract to Sinosteel to build 2x33MVA RKEF."
-    },
-    {
-      "year": "2022",
-      "phase": "present",
-      "body": "ASPIREstargate to restart its mining project with 2.4 million tons of high grade annual shipments in the South Deposit (Lameruru and Molore). ASPIREstargate to start construction of 2x33MVA RKEF. ASPIREstargate to become public listed company in IDX."
-    },
-    {
-      "year": "2024",
-      "phase": "present",
-      "body": "ASPIREstargate to commission 2x33MVA RKEF."
-    },
-    {
-      "year": "Future",
-      "phase": "future",
-      "body": "ASPIREstargate to produce green sustainable new energy nickel battery materials for EV, and invest in renewable wind and solar energy."
-    }
+    { "year": "2009", "phase": "history", "body": "PT Stargate commenced mining operation." },
+    { "year": "2013", "phase": "history", "body": "PT Samudera Sejahtera acquired 100% of PT Stargate." },
+    { "year": "2014", "phase": "history", "body": "Indonesia Government banned export of raw nickel ore." },
+    { "year": "2017", "phase": "present", "body": "ASPIRE was established. In April 2017, ASPIRE group acquired 100% of PT Stargate, with the intention of developing PT Stargate into nickel processing company." },
+    { "year": "2021", "phase": "present", "body": "ASPIREstargate restructuring is completed. Signed SPA with PLN for power purchase and supply, and HOA for PLN to build 450MW PLTGU on the site. Appointed MottMac to design its Industrial Park master plan. Awarded EPC Contract to Sinosteel to build 2x33MVA RKEF." },
+    { "year": "2022", "phase": "present", "body": "ASPIREstargate to restart its mining project with 2.4 million tons of high grade annual shipments in the South Deposit (Lameruru and Molore). ASPIREstargate to start construction of 2x33MVA RKEF. ASPIREstargate to become public listed company in IDX." },
+    { "year": "2024", "phase": "present", "body": "ASPIREstargate to commission 2x33MVA RKEF." },
+    { "year": "Future", "phase": "future", "body": "ASPIREstargate to produce green sustainable new energy nickel battery materials for EV, and invest in renewable wind and solar energy." }
   ]
 }

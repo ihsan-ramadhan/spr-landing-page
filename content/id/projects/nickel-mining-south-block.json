@@ -1,0 +1,76 @@
+{
+  "slug": "nickel-mining-south-block",
+  "title": "Pertambangan Nikel",
+  "subtitle": "PT Stargate Pasific Resources - Endapan South Block",
+  "summary": "Operasi tambang aktif di South Block menghasilkan 2,4 juta ton bijih High Grade per tahun, dengan sumber daya sesuai JORC sebesar 146 juta ton.",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641105665845-QEQXR9D8RL2BC9KW6M5D/9D67F4EA-0DC5-4905-A3C9-EC018E3F2A5A.jpg",
+  "images": [
+    "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/fceaaed2-df61-4948-9ede-0aa0fbe2759c/BE5477E9-A603-4616-B032-8D6D9C1A029C.jpg",
+    "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/8e5c3c29-6ba5-4761-aa8f-ec8b234a81f8/9D67F4EA-0DC5-4905-A3C9-EC018E3F2A5A.jpg"
+  ],
+  "mapCoordinates": {
+    "lat": -3.312075,
+    "lng": 122.286066,
+    "zoom": 17,
+    "label": "Lokasi Tambang South Block"
+  },
+  "order": 1,
+  "featured": true,
+  "stats": [
+    { "label": "Produksi Tahunan", "value": "2.4", "unit": "Juta Ton HG" },
+    { "label": "Luas Konsesi", "value": "1,213.2", "unit": "ha" },
+    { "label": "Total Sumber Daya", "value": "146.1", "unit": "Juta Ton @1.19% Ni" },
+    { "label": "Kapasitas Stockpile", "value": "1.5", "unit": "Juta Ton" }
+  ],
+  "sections": [
+    {
+      "heading": "Ikhtisar",
+      "body": [
+        "Stargate terletak di antara dua smelter nikel terbesar, Tsingshan Group dan Virtue Dragon, memberikan Stargate biaya pengangkutan yang kompetitif untuk pengiriman bijih.",
+        "Stargate telah membangun reputasinya di bidang pertambangan nikel dan telah menjadi pemasok yang disukai oleh setiap pelanggannya.",
+        "Untuk memenuhi permintaan mereka, Stargate berencana melipatgandakan kapasitas produksi dan pengiriman saat ini menjadi 2,4 juta ton bijih High Grade per tahun, dan tambahan 4 juta ton bijih Medium dan Low Grade per tahun.",
+        "Strateginya adalah mengoptimalkan NPV tambang, dan memproduksi bijih High Grade sebanyak dan sedini mungkin dari South IUP. Peningkatan kapasitas ini juga selaras dengan rencana Stargate untuk membangun pabrik pengolahan RKEF sendiri yang memerlukan 600 ribu ton umpan per lini."
+      ]
+    },
+    {
+      "heading": "Izin Pertambangan",
+      "body": [
+        "Tahap: IUP Produksi",
+        "Status: Bersih & Jelas",
+        "Total luas: 1.213,2 Ha",
+        "Berakhir: 22-Des-2029 (hingga 2049)",
+        "Dapat Diperpanjang: @ 10 tahun sekali",
+        "Stargate juga telah memperoleh perizinan primer dan sekunder lainnya, seperti semua izin IPPKH kehutanan yang diperlukan untuk kedua IUP, izin dermaga, izin lingkungan, dll. Semua kewajiban Stargate kepada pemerintah dalam kondisi baik.",
+        "Stargate telah mengamankan sepenuhnya semua area lahan, total 540 hektar, yang diperlukan untuk operasi pertambangan, termasuk 100% kepemilikan atas area strategis: pelabuhan, jalan akses utama, area pabrik industri masa depan, dan area endapan nikel."
+      ]
+    },
+    {
+      "heading": "Infrastruktur Pertambangan",
+      "body": [
+        "Stargate memiliki kemampuan logistik segala cuaca dengan jaringan jalan pengangkutan, dua dermaga dengan kapasitas pemuatan gabungan hingga 20.000 t/hari, dan total kapasitas penyimpanan 1,5 juta ton. Jarak dari lubang tambang ke stockpile dan dermaga terdekat bervariasi dari 0,5 hingga 1,8 km.",
+        "Lokasi tambang memiliki base camp yang lengkap dengan fasilitas akomodasi dan makan, kantor situs, preparasi sampel, lab analisis, dan pembibitan untuk rehabilitasi dan reforestasi.",
+        "Dermaga Molore",
+        "Total luas: 1,5 ha | Kapasitas tongkang: 4 slot tongkang | Pasang surut: 9 – 12 m | Ukuran tongkang: 270 – 330 ft",
+        "Dermaga Lameruru",
+        "Total luas: 1,6 ha (dapat diperluas +1,2 ha) | Kapasitas tongkang: 2 slot tongkang | Pasang surut: 10 – 12 m | Ukuran tongkang: 270 – 330 ft",
+        "Stockpile tambang — Kapasitas penyimpanan: 1,5 juta ton",
+        "Jalan pengangkutan tambang — Sepenuhnya dimiliki, khusus untuk penggunaan Stargate."
+      ]
+    },
+    {
+      "heading": "Sumber Daya dan Cadangan",
+      "body": [
+        "Laporan Sumber Daya Mineral JORC yang dibuat oleh RungePincockMinarco dirilis pada Mei 2014, ditujukan untuk penggunaan internal Stargate saja.",
+        "Total Sumber Daya: 146.100.000 ton bijih dengan kadar 1,19% Ni, 33,14% Fe, dan 0,09% Co.",
+        "",
+        "Pernyataan Cadangan berdasarkan pemodelan sumber daya JORC telah diselesaikan oleh Stargate untuk mengklasifikasikan bijih Limonit untuk teknologi hidrometalurgi dan bijih Saprolit untuk teknologi RKEF.",
+        "",
+        "Limonit",
+        "Total Cadangan: 92.187.796 ton bijih dengan kadar 1,0% Ni, 37,4% Fe, 12,2% SiO₂, 3,5% MgO, dan 9,2% Al₂O₃.",
+        "",
+        "Saprolit",
+        "Total Cadangan: 23.178.777 ton bijih dengan kadar 1,7% Ni, 26,5% Fe, 22,6% SiO₂, 8,2% MgO, dan 5,9% Al₂O₃."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "intro": [
+    "Pada awalnya, Stargate adalah usaha patungan yang setara antara Glencore dan sebuah konglomerat pertambangan Indonesia yang terkemuka. Mereka memulai operasi pada tahun 2009 dan melanjutkan dengan Direct Shipping Ore untuk ekspor hingga larangan ekspor bijih pada Januari 2014.",
+    "Pada April 2017, grup ASPIRE mengakuisisi 100% saham Stargate, dengan niat untuk mengembangkan proyek nikel Stargate dari operasi pertambangan saja menjadi pengolahan nikel, untuk ferronikel dan bahan baterai nikel energi baru."
+  ],
+  "purpose": {
+    "heading": "Tujuan Kami",
+    "body": "Mari kita membangun bangsa kita melalui produksi nikel hijau murni dan terbarukan. Aspirasi kami adalah menenun mimpi menjadi kenyataan dengan penuh gairah melalui perjalanan murni dan terbarukan kita bersama dalam menciptakan masa kini yang lebih baik."
+  },
+  "vision": {
+    "heading": "Visi Kami",
+    "body": "Visi kita saat ini adalah menjadi pemimpin nasional di bidang pertambangan dan pengolahan nikel dengan komitmen tertinggi terhadap tanggung jawab etis, sosial, dan lingkungan. Tekad kami adalah memperkaya dan memelihara kualitas hidup orang-orang dan sumber daya alam kita secara produktif melalui peningkatan abadi terhadap keunggulan operasional efisien kami."
+  },
+  "values": {
+    "heading": "Nilai Kami",
+    "body": [
+      "Tujuan kami menciptakan masa kini yang lebih baik dimulai dari dalam diri kita sendiri dan spiritualitas kita, karena itu adalah inti dari korporasi, keluarga, komunitas, dan lingkungan kita.",
+      "Individu-individu kita yang percaya dengan hati akan pentingnya melakukan tindakan, komunikasi, dan hubungan yang unggul adalah orang-orang dengan integritas, rasa hormat, kejujuran, keterbukaan, keadilan, akuntabilitas, dan kepercayaan.",
+      "Keberanian dan tekad kita untuk unggul dengan imajinasi dan mimpi, berani mengambil tanggung jawab yang lebih besar dan meningkatkan diri kita menuju keunggulan.",
+      "Budidaya kepemimpinan yang ada di dalam diri kita yang mengarah pada kerja tim yang sinergis, saling menguntungkan, dan penuh penghormatan.",
+      "Kehadiran penuh gairah kita yang akan memastikan masa depan yang sukses bagi generasi berikutnya dan memperkaya perubahan yang bermakna dalam sejarah dunia."
+    ]
+  },
+  "timeline": [
+    { "year": "2009", "phase": "history", "body": "PT Stargate memulai operasi pertambangan." },
+    { "year": "2013", "phase": "history", "body": "PT Samudera Sejahtera mengakuisisi 100% PT Stargate." },
+    { "year": "2014", "phase": "history", "body": "Pemerintah Indonesia melarang ekspor bijih nikel mentah." },
+    { "year": "2017", "phase": "present", "body": "ASPIRE didirikan. Pada April 2017, grup ASPIRE mengakuisisi 100% PT Stargate, dengan niat untuk mengembangkan PT Stargate menjadi perusahaan pengolahan nikel." },
+    { "year": "2021", "phase": "present", "body": "Restrukturisasi ASPIREstargate selesai. Menandatangani SPA dengan PLN untuk pembelian dan pasokan daya, dan HOA agar PLN membangun PLTGU 450MW di lokasi. Menunjuk MottMac untuk merancang master plan Taman Industri. Memberikan Kontrak EPC kepada Sinosteel untuk membangun 2x33MVA RKEF." },
+    { "year": "2022", "phase": "present", "body": "ASPIREstargate memulai kembali proyek pertambangannya dengan 2,4 juta ton pengiriman kelas tinggi tahunan di South Deposit (Lameruru dan Molore). ASPIREstargate mulai membangun 2x33MVA RKEF. ASPIREstargate menjadi perusahaan terbuka di BEI." },
+    { "year": "2024", "phase": "present", "body": "ASPIREstargate mengkomisikan 2x33MVA RKEF." },
+    { "year": "Masa Depan", "phase": "future", "body": "ASPIREstargate memproduksi bahan baterai nikel energi baru hijau yang berkelanjutan untuk EV, dan berinvestasi dalam energi angin dan surya terbarukan." }
+  ]
+}

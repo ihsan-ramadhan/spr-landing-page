@@ -4,6 +4,7 @@ import { ReactNode, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ANIMATION_DEFAULTS, type RevealDirection, getFromVars } from '../../lib/animations';
+import { prefersReducedMotion } from '../../lib/motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,29 +39,41 @@ export default function Reveal({
     const el = ref.current;
     if (!el || disabled) return;
 
+    if (prefersReducedMotion()) {
+      gsap.set(el, { opacity: 1, x: 0, y: 0 });
+      return;
+    }
+
     const fromVars = {
       ...getFromVars(direction, distance || ANIMATION_DEFAULTS.slideDistance),
       ease: ANIMATION_DEFAULTS.ease,
     };
 
+    const toVars = {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      duration,
+      delay,
+      ease: ANIMATION_DEFAULTS.ease,
+    };
+
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        el,
-        fromVars,
-        {
-          opacity: 1,
-          x: 0,
-          y: 0,
-          duration,
-          delay,
-          ease: ANIMATION_DEFAULTS.ease,
+      const rect = el.getBoundingClientRect();
+      const alreadyInView = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (alreadyInView) {
+        gsap.fromTo(el, fromVars, toVars);
+      } else {
+        gsap.fromTo(el, fromVars, {
+          ...toVars,
           scrollTrigger: {
             trigger: el,
             start,
             once,
           },
-        },
-      );
+        });
+      }
     }, el);
 
     return () => ctx.revert();

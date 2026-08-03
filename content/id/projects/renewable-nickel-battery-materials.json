@@ -1,0 +1,42 @@
+{
+  "slug": "renewable-nickel-battery-materials",
+  "title": "Bahan Baterai Nikel Terbarukan",
+  "subtitle": "Fase II & III",
+  "summary": "Perluasan strategis ke bahan baterai EV melalui pengolahan HPAL, memproduksi Ni Matte, NiSO4, dan MHP dengan investasi energi terbarukan.",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641150447813-65XOL4PTQIP5OA4CD5Z4/7F04E3B4-7D99-4BB2-BBF7-50B4010EE143.JPG",
+  "order": 6,
+  "featured": false,
+  "stats": [
+    { "label": "Fase", "value": "II & III" },
+    { "label": "Kapasitas HPAL", "value": "20-30", "unit": "ktpa" },
+    { "label": "Produk", "value": "Ni Matte + NiSO₄" },
+    { "label": "Sumber Energi", "value": "Surya & Angin" }
+  ],
+  "sections": [
+    {
+      "heading": "Ikhtisar",
+      "body": [
+        "Fase II & Fase III — Mencapai Bahan Baterai Nikel \"Hijau\" Terbarukan",
+        "",
+        "Sehubungan dengan perubahan iklim, kami telah memposisikan diri untuk berkontribusi mencapai emisi karbon dioksida bersih nol. Strategi kami bekerja sama dengan PLN dan membangun jaringan transmisi daya untuk menghubungkan Taman Industri ASPIRE Stargate Konawe Utara ke Jaringan Nasional Sulawesi adalah untuk memiliki kemungkinan luas berinvestasi dalam energi terbarukan di lokasi lain di Sulawesi.",
+        "",
+        "Fase II mencakup:",
+        "- Pabrik pengolahan Ni Matte + pabrik pengolahan NiSO₄",
+        "- Peningkatan infrastruktur Taman Industri: jalan utama, dermaga, dan pelabuhan laut",
+        "- Investasi pembangkit tenaga surya",
+        "",
+        "Fase III mencakup:",
+        "- Pengolahan hidrometalurgi HPAL 20-30ktpa sedang dipertimbangkan",
+        "- Perluasan investasi pembangkit tenaga surya",
+        "- Investasi pembangkit tenaga angin"
+      ]
+    },
+    {
+      "heading": "Komitmen Keberlanjutan",
+      "body": [
+        "Dengan memanfaatkan pengolahan High-Pressure Acid Leach (HPAL), bijih limonit kadar rendah akan diproses menjadi Mixed Hydroxide Precipitate (MHP), Cobalt Sulfate, dan Nickel Sulfate untuk rantai pasokan baterai EV.",
+        "Termasuk solusi residu dry stacking dan tujuan zero liquid discharge, mengurangi dampak lahan dan sepenuhnya menghindari metode pembuangan tailing laut dalam."
+      ]
+    }
+  ]
+}

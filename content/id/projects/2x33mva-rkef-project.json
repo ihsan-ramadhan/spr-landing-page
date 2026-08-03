@@ -1,0 +1,45 @@
+{
+  "slug": "2x33mva-rkef-project",
+  "title": "Proyek 2x33MVA RKEF",
+  "subtitle": "PT Stargate Mineral Asia",
+  "summary": "Pembangunan smelter ferronikel RKEF 2x33MVA yang memproduksi 130.740 ton NPI per tahun, dibangun oleh Sinosteel dengan daya hijau PLN.",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641116547410-CKTWWS20G45L4JFON5N0/3A1F6233-B7C7-47A4-B793-66473B1755D0RKEF.jpg",
+  "order": 4,
+  "featured": true,
+  "stats": [
+    { "label": "Kapasitas Smelter", "value": "2x33", "unit": "MVA RKEF" },
+    { "label": "Output NPI Tahunan", "value": "130,740", "unit": "ton/tahun" },
+    { "label": "Umpan Sumber Daya", "value": "24.7", "unit": "Juta WMT" },
+    { "label": "Recovery Nikel", "value": "93", "unit": "%" }
+  ],
+  "sections": [
+    {
+      "heading": "Ikhtisar",
+      "body": [
+        "Stargate berencana membangun smelter ferronikel yang memproduksi Nickel Pig Iron (\"NPI\").",
+        "Lokasi smelter akan berada di Desa Molore, Distrik Langgikima, Kabupaten Konawe Utara, Provinsi Sulawesi Tenggara. Bahan baku untuk smelter SMA akan dipasok oleh SPR, perusahaan saudara dari SMA. SPR adalah pemegang izin pertambangan di area kiranya 1.674 hektar dengan sumber daya bijih nikel yang kompatibel dengan pabrik smelter diukur sebesar 24,7 juta wet metric ton (\"WMT\").",
+        "Smelter, yang akan dibangun oleh Sinosteel, akan dilengkapi dengan 2 lini smelter Rotary Kiln Electric Furnace (\"RKEF\"), dengan basis desain tingkat recovery kandungan nikel NPI sebesar 93% dari konversi bijih nikel menjadi NPI, kapasitas produksi NPI 130.740 ton per tahun (menggunakan umpan 1,65% Ni), dan kandungan nikel NPI sebesar 10%.",
+        "Konstruksi smelter Stargate dan aktivitas pra-operasi diharapkan selesai pada akhir 2023 dan aktivitas operasi diharapkan dimulai mulai 1 Januari 2024.",
+        "Untuk operasi dan pemeliharaan awal RKEF, Stargate telah setuju memberikan Kontrak O&M 2 Tahun kepada Kontraktor EPC untuk memastikan commissioning yang lancar."
+      ]
+    },
+    {
+      "heading": "Fase I",
+      "body": [
+        "Teknologi Pengolahan: 2x33MVA RKEF",
+        "Kontraktor EPC: Sinosteel Equipment & Engineering Co. Ltd.",
+        "Daya & Listrik: PLN Jaringan Nasional Sulawesi",
+        "PLTGU PLN 450MW di lokasi",
+        "Operasi & Pemeliharaan: Kontrak O&M 2 Tahun oleh Kontraktor EPC"
+      ]
+    },
+    {
+      "heading": "Daya Lebih Hijau",
+      "body": [
+        "Alih-alih membangun PLTU dengan emisi karbon tinggi lainnya untuk smelter, Stargate telah memutuskan untuk bekerja sama dengan PLN guna mencapai sumber daya yang lebih hijau.",
+        "PLN Sulawesi memiliki kelebihan daya listrik 500MW, Stargate telah setuju untuk membeli daya dari dan berinvestasi bersama PLN untuk membangun jaringan transmisi guna menghubungkan taman industri Stargate ke jaringan.",
+        "PLN juga berencana membangun PLTGU 450MW sendiri di area Stargate. Penyelesaiannya sesuai jadwal dengan konstruksi RKEF."
+      ]
+    }
+  ]
+}

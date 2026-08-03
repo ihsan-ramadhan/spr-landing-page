@@ -1,0 +1,36 @@
+{
+  "slug": "mining-services",
+  "title": "Jasa Pertambangan",
+  "subtitle": "PT Rajawali Sigi Lestari",
+  "summary": "Perusahaan jasa pertambangan berlisensi IUJP yang menyediakan layanan pertambangan nikel menyeluruh di Konawe Utara, dari pengupasan tanah penutup hingga pengiriman bijih.",
+  "heroImage": "https://images.squarespace-cdn.com/content/v1/61cdb78e5104297f40ace0af/1641108963000-FMD88BO79ZAQPIKY3EOF/2207E3C2-D1BC-40A5-AC13-1A510D0F1E9A.JPG",
+  "order": 3,
+  "featured": false,
+  "stats": [
+    { "label": "Berdiri Sejak", "value": "Berlisensi IUJP" },
+    { "label": "Target Tahunan", "value": "2.4", "unit": "Juta Ton HG" },
+    { "label": "Total Material Ditambang", "value": "10-12", "unit": "Juta Ton/Tahun" },
+    { "label": "Beroperasi Sejak", "value": "2006" }
+  ],
+  "sections": [
+    {
+      "heading": "Ikhtisar",
+      "body": [
+        "PT Rajawali Sigi Lestari adalah perusahaan jasa pertambangan berlisensi IUJP yang berfokus pada operasi tambang nikel di Konawe Utara, Sulawesi Tenggara, Indonesia.",
+        "Tim manajemen kami memiliki rekam jejak terbukti dalam membangun dan menyelesaikan pertambangan bijih nikel dengan standar tertinggi Good Mining Practice. Keahlian dan pengalaman kami yang berfokus pada nikel bertujuan untuk membawa setiap operasi tambang nikel menuju efisiensi, produktivitas, dan kinerja biaya yang optimal.",
+        "Kemampuan kami, layanan jasa pertambangan nikel yang didorong oleh keunggulan kinerja meliputi:",
+        "Rekayasa Pertambangan, Desain Pertambangan, Rencana Pertambangan, Estimasi Pertambangan, Konstruksi Pertambangan, Pengupasan Tanah Penutup Pertambangan, Ekstraksi Bijih Pertambangan, Pemuatan dan Pengangkutan Pertambangan, Pengiriman Bijih Pertambangan, Rekonsiliasi Pertambangan, Pemantauan dan Pemeliharaan Pertambangan, Rehabilitasi Pertambangan."
+      ]
+    },
+    {
+      "heading": "Portofolio Proyek",
+      "body": [
+        "Tambang Nikel Manuran (PT ASP) — 2006 hingga 2014",
+        "Layanan pertambangan menyeluruh dengan kapasitas target tahunan 1,2 juta ton pengiriman bijih, dari pengupasan tanah penutup, penambangan selektif, stockpiling, pengangkutan, hingga penyaluran ke kapal induk.",
+        "",
+        "South Block Stargate (PT SPR) — 2017 hingga sekarang",
+        "Layanan pertambangan menyeluruh dengan kapasitas target tahunan 2,4 juta ton pengiriman bijih high grade. Total material ditambang yang direncanakan adalah 10-12 juta ton."
+      ]
+    }
+  ]
+}
