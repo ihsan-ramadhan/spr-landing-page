@@ -6,7 +6,7 @@ import ParallaxBackground from '../../components/ui/ParallaxBackground';
 import HeroAnimation from '../../components/home/HeroAnimation';
 
 interface HomePageProps {
-  params: Promise<{ locale: string }>;
+  readonly params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: HomePageProps) {

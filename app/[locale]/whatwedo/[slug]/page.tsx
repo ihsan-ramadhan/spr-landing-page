@@ -10,7 +10,7 @@ import ProjectMap from '../../../../components/ui/ProjectMap';
 import { use } from 'react';
 
 interface ProjectPageProps {
-  params: Promise<{ slug: string; locale: string }>;
+  readonly params: Promise<{ slug: string; locale: string }>;
 }
 
 export function generateStaticParams() {
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
   const loc = isLocale(locale) ? locale : DEFAULT_LOCALE;
   const project = getProjectBySlug(slug, loc);
   if (!project) return {};
-  return projectMetadata(project.title, project.summary, loc);
+  return projectMetadata(project.title, project.summary, loc, slug);
 }
 
 export default function ProjectDetailPage({ params }: ProjectPageProps) {

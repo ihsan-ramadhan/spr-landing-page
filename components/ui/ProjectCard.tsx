@@ -6,10 +6,10 @@ import { Project } from '../../lib/content';
 import Reveal from './Reveal';
 
 interface ProjectCardProps {
-  project: Project;
-  index?: number;
-  learnMoreLabel?: string;
-  locale?: string;
+  readonly project: Project;
+  readonly index?: number;
+  readonly learnMoreLabel?: string;
+  readonly locale?: string;
 }
 
 export default function ProjectCard({ project, index = 0, learnMoreLabel = 'Learn more', locale = 'en' }: ProjectCardProps) {
@@ -22,7 +22,7 @@ export default function ProjectCard({ project, index = 0, learnMoreLabel = 'Lear
             alt={project.title}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-cover"
           />
         </div>
         <div>

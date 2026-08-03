@@ -5,7 +5,7 @@ import Reveal from '../../../components/ui/Reveal';
 import ParallaxBackground from '../../../components/ui/ParallaxBackground';
 
 interface AboutPageProps {
-  params: Promise<{ locale: string }>;
+  readonly params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: AboutPageProps) {

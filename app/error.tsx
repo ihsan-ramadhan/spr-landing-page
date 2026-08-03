@@ -3,12 +3,12 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 
-export default function Error({
+export default function ErrorFallback({
   error,
   reset,
 }: {
-  error: Error & { digest?: string };
-  reset: () => void;
+  readonly error: Error & { digest?: string };
+  readonly reset: () => void;
 }) {
   useEffect(() => {
     console.error(error);
@@ -24,13 +24,14 @@ export default function Error({
       </p>
       <div className="flex gap-4">
         <button
+          type="button"
           onClick={reset}
           className="inline-flex px-6 py-3 bg-brand-black text-white text-sm font-normal tracking-wider uppercase hover:bg-brand-primary transition-all duration-300 rounded"
         >
           Try again
         </button>
         <Link
-          href={`/en`}
+          href="/"
           className="inline-flex px-6 py-3 border border-gray-300 text-sm font-normal tracking-wider uppercase hover:bg-gray-900 hover:text-white transition-all duration-300 rounded"
         >
           Back to home

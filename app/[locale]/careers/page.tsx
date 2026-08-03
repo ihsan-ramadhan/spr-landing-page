@@ -4,7 +4,7 @@ import Reveal from '../../../components/ui/Reveal';
 import CareersActions from '../../../components/careers/CareersActions';
 
 interface CareersPageProps {
-  params: Promise<{ locale: string }>;
+  readonly params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: CareersPageProps) {

@@ -27,6 +27,8 @@ export const metadata: Metadata = {
   },
 };
 
+const SET_LANG_SCRIPT = `(function(){var m=location.pathname.match(/^\\/(en|id)(?=\\/|$)/);if(m)document.documentElement.lang=m[1];})()`;
+
 export default function RootLayout({
   children,
 }: {
@@ -35,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${manrope.variable}`}>
       <body className="flex flex-col min-h-screen font-manrope text-foreground bg-background">
+        <script dangerouslySetInnerHTML={{ __html: SET_LANG_SCRIPT }} />
         <a href="#main-content" className="skip-to-main">Skip to main content</a>
         {children}
       </body>

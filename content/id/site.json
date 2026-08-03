@@ -37,6 +37,7 @@
   ],
   "ui": {
     "languageToggle": "ID",
+    "languageToggleLabel": "Beralih ke Bahasa Inggris",
     "menuOpen": "Buka menu",
     "menuClose": "Tutup menu",
     "cta": {
@@ -95,11 +96,11 @@
       "contact": "Kontak"
     },
     "footer": {
-      "siteMap": "Site Map",
-      "socialLinks": "Social Links",
-      "aboutLink": "About ASPIRE Stargate",
-      "getInvolved": "Get Involved",
-      "rights": "All rights reserved."
+      "siteMap": "Peta Situs",
+      "socialLinks": "Tautan Sosial",
+      "aboutLink": "Tentang ASPIRE Stargate",
+      "getInvolved": "Mari Terlibat",
+      "rights": "Seluruh hak cipta dilindungi."
     }
   }
 }

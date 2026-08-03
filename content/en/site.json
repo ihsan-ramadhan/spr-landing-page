@@ -37,6 +37,7 @@
   ],
   "ui": {
     "languageToggle": "EN",
+    "languageToggleLabel": "Switch to Indonesian",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "cta": {

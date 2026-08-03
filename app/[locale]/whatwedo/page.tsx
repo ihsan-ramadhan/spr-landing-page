@@ -4,7 +4,7 @@ import ProjectCard from '../../../components/ui/ProjectCard';
 import Reveal from '../../../components/ui/Reveal';
 
 interface WhatWeDoPageProps {
-  params: Promise<{ locale: string }>;
+  readonly params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: WhatWeDoPageProps) {

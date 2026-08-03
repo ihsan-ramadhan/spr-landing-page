@@ -3,7 +3,7 @@ import { pageMetadata } from '../../../lib/metadata';
 import Reveal from '../../../components/ui/Reveal';
 
 interface InvestorsPageProps {
-  params: Promise<{ locale: string }>;
+  readonly params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: InvestorsPageProps) {

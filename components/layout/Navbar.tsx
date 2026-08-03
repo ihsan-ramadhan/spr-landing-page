@@ -8,10 +8,10 @@ import gsap from 'gsap';
 import type { UIStrings, Locale } from '../../lib/content';
 
 interface NavbarProps {
-  nav: { label: string; href: string }[];
-  ui: UIStrings;
-  locale: Locale;
-  altText: string;
+  readonly nav: { label: string; href: string }[];
+  readonly ui: UIStrings;
+  readonly locale: Locale;
+  readonly altText: string;
 }
 
 export default function Navbar({ nav, ui, locale, altText }: NavbarProps) {
@@ -146,7 +146,7 @@ export default function Navbar({ nav, ui, locale, altText }: NavbarProps) {
           <Link
             href={toggleHref}
             className="ml-2 px-3 py-2 text-xs font-normal uppercase tracking-wider border border-gray-200 rounded-full text-gray-600 hover:text-brand-primary hover:border-brand-primary transition-colors duration-300"
-            aria-label="Switch language"
+            aria-label={ui.languageToggleLabel}
           >
             {ui.languageToggle}
           </Link>
@@ -155,7 +155,7 @@ export default function Navbar({ nav, ui, locale, altText }: NavbarProps) {
           <Link
             href={toggleHref}
             className="px-3 py-2 text-xs font-normal uppercase tracking-wider border border-gray-200 rounded-full text-gray-600 hover:text-brand-primary hover:border-brand-primary transition-colors duration-300"
-            aria-label="Switch language"
+            aria-label={ui.languageToggleLabel}
           >
             {ui.languageToggle}
           </Link>

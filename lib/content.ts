@@ -12,6 +12,7 @@ export function isLocale(value: string): value is Locale {
 
 export interface UIStrings {
   languageToggle: string;
+  languageToggleLabel: string;
   menuOpen: string;
   menuClose: string;
   cta: {

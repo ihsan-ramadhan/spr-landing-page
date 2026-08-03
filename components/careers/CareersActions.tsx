@@ -8,7 +8,7 @@ import type { UIStrings } from '../../lib/content';
 gsap.registerPlugin(ScrollTrigger);
 
 interface CareersActionsProps {
-  ui?: UIStrings;
+  readonly ui?: UIStrings;
 }
 
 export default function CareersActions({ ui }: CareersActionsProps = {}) {

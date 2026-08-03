@@ -7,16 +7,16 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 interface TimelineItem {
-  year: string;
-  phase: 'history' | 'present' | 'future';
-  body: string;
+  readonly year: string;
+  readonly phase: 'history' | 'present' | 'future';
+  readonly body: string;
 }
 
 interface TimelineProps {
-  items: TimelineItem[];
-  ourStoryLabel?: string;
-  milestonesLabel?: string;
-  ariaMilestonesLabel?: string;
+  readonly items: TimelineItem[];
+  readonly ourStoryLabel?: string;
+  readonly milestonesLabel?: string;
+  readonly ariaMilestonesLabel?: string;
 }
 
 const PHASE_STYLES: Record<string, { dot: string }> = {
@@ -36,9 +36,9 @@ function TimelineItemRow({
   index,
   isLast,
 }: {
-  item: TimelineItem;
-  index: number;
-  isLast: boolean;
+  readonly item: TimelineItem;
+  readonly index: number;
+  readonly isLast: boolean;
 }) {
   const rowRef = useRef<HTMLLIElement>(null);
   const desktopCardRef = useRef<HTMLDivElement>(null);

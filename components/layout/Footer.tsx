@@ -9,13 +9,13 @@ import type { UIStrings, Locale } from '../../lib/content';
 gsap.registerPlugin(ScrollTrigger);
 
 interface FooterProps {
-  name: string;
-  address: string;
-  email: string;
-  social: { instagram: string; facebook: string; twitter: string };
-  legalName: string;
-  ui: UIStrings;
-  locale: Locale;
+  readonly name: string;
+  readonly address: string;
+  readonly email: string;
+  readonly social: { readonly instagram: string; readonly facebook: string; readonly twitter: string };
+  readonly legalName: string;
+  readonly ui: UIStrings;
+  readonly locale: Locale;
 }
 
 export default function Footer({ name, address, email, social, legalName, ui, locale }: FooterProps) {

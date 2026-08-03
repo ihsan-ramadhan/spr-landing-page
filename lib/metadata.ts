@@ -30,26 +30,37 @@ const META: Record<PageKey, Record<Locale, { title: string; description: string 
   },
 };
 
+const PAGE_PATH: Record<PageKey, string> = {
+  home: '',
+  about: '/about',
+  careers: '/careers',
+  governance: '/governance',
+  investors: '/investors',
+  whatWeDo: '/whatwedo',
+};
+
 export function pageMetadata(key: PageKey, locale: string): Metadata {
   const loc: Locale = isLocale(locale) ? locale : DEFAULT_LOCALE;
   const m = META[key][loc];
   const config = getSiteConfig(loc);
+  const path = PAGE_PATH[key];
   return {
     title: m.title,
     description: key === 'home' ? config.ui.home.heroText : m.description,
     alternates: {
-      languages: { en: `/en`, id: `/id` },
+      languages: { en: `/en${path}`, id: `/id${path}` },
     },
   };
 }
 
-export function projectMetadata(title: string, summary: string, locale: string): Metadata {
+export function projectMetadata(title: string, summary: string, locale: string, slug: string): Metadata {
   const loc: Locale = isLocale(locale) ? locale : DEFAULT_LOCALE;
+  const path = `/whatwedo/${slug}`;
   return {
     title,
     description: summary,
     alternates: {
-      languages: { en: '/en', id: '/id' },
+      languages: { en: `/en${path}`, id: `/id${path}` },
     },
   };
 }

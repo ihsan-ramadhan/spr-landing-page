@@ -4,7 +4,7 @@ import Reveal from '../../../components/ui/Reveal';
 import Image from 'next/image';
 
 interface GovernancePageProps {
-  params: Promise<{ locale: string }>;
+  readonly params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: GovernancePageProps) {
